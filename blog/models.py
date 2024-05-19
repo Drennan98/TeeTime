@@ -8,7 +8,9 @@ STATUS = (
     (1, "Publish")
 )
 
-class Golf(models.Model):
+# Post Class
+
+class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
@@ -17,7 +19,7 @@ class Golf(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
 class Meta:
-    ordering = ['_created_on']
+    ordering = ['-created_on']
 
 def __str__(self):
     return self.title
