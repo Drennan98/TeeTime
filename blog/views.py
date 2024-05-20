@@ -3,6 +3,7 @@ from .models import Post
 
 # Create your views here.
 
+# Two class based views for mapping 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"

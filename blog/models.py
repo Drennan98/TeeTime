@@ -5,6 +5,7 @@ from django.utils import timezone
 
 # Create your models here.
 
+# Used for filtering posts based on their status
 STATUS = (
     (0, "Draft"),
     (1, "Publish")
