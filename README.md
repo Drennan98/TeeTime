@@ -66,9 +66,21 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 # Features 
 
-
-
 # Design
+
+## Technologies Used 
+
+- HMTL, CSS, JavaScript, Python and Django.
+
+- Balsamiq (Wireframes). 
+
+- Heroku was used for deployment.
+
+- GitHub was used for storing all of my files and READme. 
+
+- Git was used for version control --> "git add . " --> "git commit -m "**message**" --> "git push".
+
+- Google Fonts was used to import fonts for the project. 
 
 ## Planning
 
