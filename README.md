@@ -23,3 +23,41 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 - Golfers of all skill levels. 
 
 - Golfers looking for other people to play with.
+
+# User Stories and Epics
+
+## Epics 
+
+- Fully functioning site.
+
+- Easy to navigate and intuitive site. 
+
+- A form for signing up on the website. 
+
+- Easy to understand nav bar and also shows whether you're logged in or logged out. 
+
+- Golf course image gallery.
+
+- Database setup. 
+
+## User Stories 
+
+1. Create a convenient, easy-to-navigate interface.
+
+2. Complete, Edit and Delete functions. 
+
+3. Views the dates a blog post was created and edited. 
+
+4. Different golf courses. 
+
+5. Liking and commenting other peoples posts. 
+
+6. Signing up for golf newsletter. 
+
+7. Course ratings. 
+
+8. Defensive programming. 
+
+9. Search functions. 
+
+10. Background story of creator. 
