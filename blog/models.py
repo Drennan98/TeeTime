@@ -20,13 +20,26 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-# The '-' before "created_on" is used so the most recently published posts will show up first.
-class Meta:
-    ordering = ['-created_on']
-
     def publish(self):
         self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
         return self.title
+    
+# Comment class with basic structure
+class Comment(models.Model):
+    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"Comment by {self.name} on {self.post}"
+
+# The '-' before "created_on" is used so the most recently published posts will show up first.
+class Meta:
+    ordering = ['-created_on']
+

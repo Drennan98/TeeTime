@@ -82,6 +82,8 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Google Fonts was used to import fonts for the project. 
 
+- Django Summernote was used for thr uploading of media files. 
+
 ## Planning
 
 ## Typography 
