@@ -24,7 +24,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Golfers looking for other people to play with.
 
-# User Stories and Epics
+# Agile Methodology 
 
 ## Epics 
 
@@ -61,3 +61,37 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 9. Search functions. 
 
 10. Background story of creator. 
+
+## MoSCoW Prioritization
+
+# Features 
+
+
+
+# Design
+
+## Planning
+
+## Typography 
+
+## Color Palette
+
+## Wireframes (include different screen sizes)
+
+## Fonts
+
+## Layout
+
+# Testing 
+
+## Validations 
+
+## Lighthouse Testing (Desktop and Mobile)
+
+# Deployment
+
+- Deployment steps go here...
+
+# Bugs 
+
+# Credits 
