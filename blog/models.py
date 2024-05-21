@@ -38,6 +38,13 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment by {self.name} on {self.post}"
+    
+# Golf category with basic structure
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
 
 # The '-' before "created_on" is used so the most recently published posts will show up first.
 class Meta:
