@@ -1,9 +1,9 @@
 from django.views import generic
-from .models import Post
+from .models import Category, Post
 
 # Create your views here.
 
-# Two class based views for mapping 
+# Class based views for mapping 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
@@ -11,3 +11,7 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = "post_detail.html"
+
+class CategoryList(generic.CategoryView):
+    model = Category
+    template_name = "category_list.html"
