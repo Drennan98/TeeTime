@@ -11,7 +11,3 @@ class PostList(generic.ListView):
 class PostDetail(generic.DetailView):
     model = Post
     template_name = "post_detail.html"
-
-class CategoryList(generic.CategoryView):
-    model = Category
-    template_name = "category_list.html"
