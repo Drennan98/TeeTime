@@ -39,11 +39,15 @@
     <nav class ="navbar navbar-expand-sm bg-light shadow" id="primarynav">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">TeeTime</a>
-            <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse">Tee-Time</button>
+            <!-- Burger icon navbar inspired by Love Running -->
+            <button class="navbar-toggler btn btn-primary" data-target="navbarResponsive" type="button" data-toggle="collapse">Tee-Time</button><span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            </div>
+
+
 
         </div>
-
     </nav>
-    
 </body>
 </html>
