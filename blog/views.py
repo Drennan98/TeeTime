@@ -1,5 +1,5 @@
 from django.views import generic
-from .models import Category, Post
+from .models import Post
 
 # Create your views here.
 
