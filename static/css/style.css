@@ -1,0 +1,14 @@
+body {
+    font-size: 20px; 
+    font-family: "Roboto", sans-serif;
+    background-color: #1b98e0;
+}
+.btn-danger {
+    border-radius: 2px solid black;
+    background-color: #050505;
+    color: white;
+}
+.masthead {
+    height: auto;
+    padding: 20px 15px;
+}

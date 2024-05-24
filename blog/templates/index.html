@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -8,6 +10,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/golf.png' %}">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,45 +26,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeeTime</title>
 </head>
-<body>
-    <style>
-        body {
-        font-size: 20px; 
-        font-family: "Roboto", sans-serif;
-        background-color: #1b98e0;
-    }
-    .btn-danger {
-        border-radius: 2px solid black;
-        background-color: #050505;
-        color: white;
-    }
-    .masthead {
-        height: auto;
-        padding: 20px 15px;
-    }
-    </style>
-    <!-- Nav Bar -->
-    <nav class ="navbar navbar-expand-sm bg-light shadow" id="primarynav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">TeeTime</a>
-            <!-- Burger icon navbar inspired by Love Running -->
-            <button class="navbar-toggler btn btn-primary" data-target="navbarResponsive" type="button" data-toggle="collapse">Tee-Time</button><span class="navbar-toggler-icon"></span>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="X"></a>Home</li>
-                    <li class="nav-item"><a class="nav-link" href="X"></a>Blog</li>
-                    <li class="nav-item"><a class="nav-link" href="X"></a>Register</li>
-                </ul>
-                
-
-            </div>
-
-
-
-        </div>
-    </nav>
-    {% block content %}
-    <!-- Content goes here -->
-    {% endblock content %}
-</body>
 </html>
