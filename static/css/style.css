@@ -19,3 +19,12 @@ a:hover {
     transition-duration: 0.4s;
 }
 
+.container-fluid {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+}
+
+
