@@ -1,11 +1,11 @@
+/* General styles */
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    background-color: #2dc2bd;
-}
-
-#heading {
-    text-align: center;
+    background-color: #09814A;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -14,9 +14,10 @@ a {
     color: black;
 }
 
-a:hover {
-    background-color: green;
-    transition-duration: 0.4s;
+h1 {
+    background-color: #F45D01;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .container-fluid {
@@ -26,5 +27,49 @@ a:hover {
 .search-bar {
     display: flex;
 }
+
+/* Post styles */
+
+.post-list {
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hover pseudo classes */
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: green;
+    transition-duration: 0.4s;
+}
+
+.hero-unit {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
 
 
