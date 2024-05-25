@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: green;
     transition-duration: 0.4s;
 }
 
