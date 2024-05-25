@@ -8,6 +8,16 @@ body {
     padding: 0;
 }
 
+#heading {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+    padding-left: 575px;
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
     text-align: center;
@@ -17,7 +27,7 @@ a {
 h1 {
     background-color: #F45D01;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .container-fluid {
@@ -73,10 +83,10 @@ a:hover {
     margin: 20px 0;
     font-size: 18px;
     background-color: white;
-    border: 10pxpx solid #F45D01;
+    border: 10px solid #F45D01;
     border-radius: 4px;
     text-align: center;
-    font-weight: 200px;
+    font-weight: 400;
 }
 
 
@@ -85,7 +95,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0
+    margin: 20px 0;
 }
 
 .pager a {

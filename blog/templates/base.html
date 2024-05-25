@@ -25,8 +25,10 @@
     <title>TeeTime</title>
 </head>
 <body>
+    <div class="page-header">
+        <h1>TeeTime<small class="right">All things golf related</small></h1>
+    </div>
     <!-- Navigation bar -->
-    <h1 id="heading"><a href="base.html">TeeTime</h1></a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body">
         <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
@@ -51,9 +53,9 @@
             </div>
         </div>
     </nav>
-    <div class="hero-unit">
-        <h1>Welcome to TeeTime</h1>
-        <h2>Catch up on all the latest golf news!</h2>
+    {% comment %}
+    <!-- <div class="hero-unit">
+        <h1 id="heading">Welcome to TeeTime</h1>
         <p><a href="#" class="btn btn-primary btn-large">Click here to register &raquo;</p>
     </div>
     <div class="post-list">
@@ -64,12 +66,18 @@
                 <p><small>By {{ post.author }} on {{ post.date_posted }}</small></p>
             </div>
         {% endfor %}
-    </div>
+    </div> -->
+    {% endcomment %}
+    
+    {% block content %}
+
+    {% endblock content %}
+
     <footer>
-        <ul class="pager">
+        <!-- <ul class="pager">
             <li><a href="#">Previous</a></li>
             <li><a href="#">Next</a></li>
-        </ul>
+        </ul> -->
     </footer>
 </body>
 </html>
