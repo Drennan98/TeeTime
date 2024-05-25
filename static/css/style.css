@@ -62,14 +62,39 @@ a:hover {
     transition-duration: 0.4s;
 }
 
+.pager a:hover {
+    background-color: #F45D01;
+}
+
+/* Hero unit styles */
+
 .hero-unit {
     padding: 20px;
     margin: 20px 0;
     font-size: 18px;
-    border: 2px solid #ddd;
+    background-color: white;
+    border: 10pxpx solid #F45D01;
     border-radius: 4px;
     text-align: center;
+    font-weight: 200px;
 }
 
 
+.pager {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0
+}
 
+.pager a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
