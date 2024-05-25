@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <div class="masthead">
+        <div class="container">
+            <div class="row g-0">
+                <h1 class="post-title">{{ post.title }}</h1>
+                <p>{{ post.content }}</p>
+                <p><small>By {{ post.author }} on {{ post.date_posted }}</small></p>
+                <a href="{% url 'index.html' %}">Return to home page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

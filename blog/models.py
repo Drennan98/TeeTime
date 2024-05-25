@@ -11,11 +11,13 @@ STATUS = (
     (1, "Publish")
 )
 
-# Post class with basic structure.
+# Post model with basic structure.
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
+    # Moved line starting with "user" down to be pep8 compliant
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='golf_posts')
     updated_on = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -27,11 +29,12 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
-# Comment class with basic structure
+# Comment model with basic structure
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
     email = models.EmailField()
+    image = models.ImageField(upload_to='images/')
     body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
