@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['.gitpod.io',
                  'localhost', 
                  'localhost:8000', 
                  '.herokuapp.com', 
-                 'https://teetime0000-43f1c39ce1c8.herokuapp.com/', ]
+                 'https://teetime0000-43f1c39ce1c8.herokuapp.com/',]
 
 
 # Application definition
@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'tee_time.urls'
