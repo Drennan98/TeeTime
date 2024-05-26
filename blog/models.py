@@ -2,6 +2,7 @@ from time import timezone
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -21,6 +22,7 @@ class Post(models.Model):
     updated_on = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    featured_image = CloudinaryField('#', default='add placeholder text...')
 
     def publish(self):
         self.published_date = timezone.now()
