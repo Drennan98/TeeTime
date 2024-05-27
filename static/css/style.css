@@ -2,19 +2,19 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
     background-color: #09814A;
     margin: 0;
     padding: 0;
 }
 
-#heading {
+#hero-heading {
     text-align: center;
 }
 
-.right {
-    text-align: right;
-    font-style: italic;
+p {
+    padding: 20px 0;
 }
 
 a {
@@ -25,8 +25,9 @@ a {
 
 h1 {
     background-color: #F45D01;
-    padding: 10px 0;
-    text-align: left;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 0;
 }
 
 .container-fluid {
@@ -67,7 +68,7 @@ h1 {
 }
 
 a:hover {
-    background-color: green;
+    background-color: #F45D01;
     transition-duration: 0.4s;
 }
 
@@ -79,7 +80,7 @@ a:hover {
 
 .hero-unit {
     padding: 20px;
-    margin: 20px 0;
+    margin: 0;
     font-size: 18px;
     background-color: white;
     border: 10px solid #F45D01;
@@ -106,4 +107,9 @@ a:hover {
     background-color: #007bff;
     border-radius: 10px;
     transition: background-color 0.5s ease;
+}
+
+.page-header {
+    background-color: #F45D01;
+    padding: 20px 0;
 }
