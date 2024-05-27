@@ -5,8 +5,8 @@
 {% block content %}
 
 <body>
-    <div class="container">]
-        <h1>Register for our golf newsletter!</h1>
+    <div class="form-container">]
+        <h1 id="form-heading">Register for our golf newsletter!</h1>
         <form method="post" action="{% url 'register.html' %}">
             {% csrf_token %}
             <div class="form-group">
