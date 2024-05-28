@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['.gitpod.io',
                  'localhost', 
                  'localhost:8000', 
                  '.herokuapp.com', 
-                 'https://teetime0000-43f1c39ce1c8.herokuapp.com/',]
+                 'teetime0000-43f1c39ce1c8.herokuapp.com']
 
 
 # Application definition

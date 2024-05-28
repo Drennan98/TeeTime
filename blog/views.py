@@ -2,7 +2,7 @@ from django.views import generic
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
 from django.core.paginator import Paginator
-from contrib.auth.models import User
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 
@@ -46,7 +46,7 @@ def signup(request):
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()
 
-        # The user is sent back to home page upon successful signup.
+        # The user is sent back to home page upon successful sign-up.
         login(request, user)
         return redirect("home")
     
