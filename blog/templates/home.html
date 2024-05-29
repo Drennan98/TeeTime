@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block content %}
+
 <div class="post-list">
     {% for post in posts %}
         <div class="post">
@@ -12,8 +14,6 @@
     {% endfor %}
 </div> 
 
-{% block content %}
-
-{% endblock content %}
+{% endblock %}
 
 

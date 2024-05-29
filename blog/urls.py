@@ -8,7 +8,7 @@ urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('signup/', views.signup, name='signup'),
     path('home/', PostList.as_view(), name='home'),
-    path('post_detail<int:pk>/', PostDetail.as_view(), name='post_detail'),
+    path('post_detail/<int:pk>/', PostDetail.as_view(), name='post_detail'),
 ]
 
 if settings.DEBUG:
