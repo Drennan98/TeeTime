@@ -32,15 +32,15 @@ def signup(request):
 
         if password != confirm_password:
             messages.error (request, "The passwords do not match. Please try again.")
-            return render (request, "form.html")
+            return render (request, "register.html")
         
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already in use. Please try again.")
-            return render (request, "form.html")
+            return render (request, "register.html")
         
         if User.objects.filter(email=email).exists():
             messages.error(request, "Email already in use. Please try again.")
-            return render (request, "form.html")
+            return render (request, "register.html")
         
         user = User.objects.create_user(username=username, email=email, password=password)
         user.save()

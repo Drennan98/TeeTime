@@ -58,18 +58,9 @@
         <h1 id="heading">Welcome to TeeTime</h1>
         <p><a href="#" class="btn btn-primary btn-large">Click here to register &raquo;</a></p>
     </div>
-    <div class="post-list">
-        {% for post in posts %}
-            <div class="post">
-                <h2><a href="{% url 'post_detail.html' post.pk %}">{{ post.title }}</a></h2>
-                <p>{{ post.content|slice:":100" }}...</p>
-                <p><small>By {{ post.author }} on {{ post.date_posted }}</small></p>
-            </div>
-        {% endfor %}
-    </div> 
-    {% block content %}
-
-    {% endblock content %}
+    <button class="nav-button">Click here to view our blog posts!</button>
+    <button class="nav-button">Click here to view our favourite golf courses!</button>
+    <button class="nav-button">Click here to view the background story of Darragh, the creator of TeeTime!</button>
     <footer>
     </footer>
 </body>

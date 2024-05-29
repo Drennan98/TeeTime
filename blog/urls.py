@@ -2,11 +2,13 @@ from . import views
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from blog.views import PostDetail, PostList
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('post/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('register/', views.signup, name='register')
+    path('signup/', views.signup, name='signup'),
+    path('home/', PostList.as_view(), name='home'),
+    path('post_detail<int:pk>/', PostDetail.as_view(), name='post_detail'),
 ]
 
 if settings.DEBUG:

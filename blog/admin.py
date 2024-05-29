@@ -4,6 +4,7 @@ from .models import Post, Category, Comment
 # Register your models here.
 
 # Basic customization
+
 class PostAdmin(admin.ModelAdmin):
     list_display = ("title", "slug", "status", "created_on")
     list_filter = ("status",)

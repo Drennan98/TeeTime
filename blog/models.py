@@ -22,7 +22,7 @@ class Post(models.Model):
     updated_on = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    featured_image = CloudinaryField('#', default='add placeholder text...')
+    featured_image = CloudinaryField('#', default='placeholder text...')
 
     def publish(self):
         self.published_date = timezone.now()
@@ -38,8 +38,11 @@ class Comment(models.Model):
     email = models.EmailField()
     image = models.ImageField(upload_to='images/')
     body = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=True)
+
+    class Meta: 
+        ordering = ['created_on']
 
     def __str__(self):
         return f"Comment by {self.name} on {self.post}"
