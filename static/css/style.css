@@ -4,7 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: center;
-    background-color: #09814A;
+    background-color: #F45D01;
     margin: 0;
     padding: 0;
 }
@@ -117,6 +117,7 @@ a:hover {
 
 button:hover {
     background-color: #F45D01;
+    transition-duration: 0.4s;
 }
 
 /* Hero unit styles */
@@ -157,6 +158,14 @@ button:hover {
     padding: 20px 0;
 }
 
-.nav-button {
-    font-color: 
+/* Social Media styles */
+
+#social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    margin: 60px;
 }

@@ -1,5 +1,5 @@
+<!-- Django Templating Language (DLT) which loads static files -->
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +25,7 @@
     <title>TeeTime</title>
 </head>
 <body>
+    <!-- Header -->
     <div class="page-header">
         <h1>TeeTime</h1>
         <span>All things golf related</span>
@@ -54,28 +55,29 @@
             </div>
         </div>
     </nav>
+    <!-- Welcome message with option to register -->
     <div class="hero-unit">
         <h1 id="heading">Welcome to TeeTime</h1>
-        <p><a href="#" class="btn btn-primary btn-large">Click here to register &raquo;</a></p>
+        <p><a href="register.html" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
     </div>
-    <div>
+    <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
         <button class="nav-button text-black">Click here to view our blog posts &raquo;</button>
         <button class="nav-button text-black">Click here to view our favourite golf courses &raquo;</button>
         <button class="nav-button text-black">Click here to view the background story of Darragh, the creator of TeeTime &raquo;</button>
     </div>
-    <footer>
+    <footer class="footer-main">
         <div>
             <!-- Font Awesome script and icons -->
             <script src="https://kit.fontawesome.com/09d74f525c.js" crossorigin="anonymous"></script>
-          <ul id="socmed">
+          <ul id="social-media">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a></li>
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
         </div>
- 
+    </footer>
 </body>
 </html>
    
