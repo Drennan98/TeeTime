@@ -6,7 +6,7 @@
 <body>
     <div class="form-container">
         <h1 id="form-heading">Register for our golf newsletter!</h1>
-        <form method="post" action="{% url 'register.html' %}">
+        <form method="post" action="{% url 'signup' %}">
             {% csrf_token %}
             <div class="form-group">
                 <label for="username">Username:</label>
