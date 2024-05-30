@@ -27,8 +27,8 @@
 <body>
     <!-- Header -->
     <div class="page-header">
-        <h1>TeeTime</h1>
-        <span>All things golf related</span>
+        <h1>{% block title %}TeeTime{% endblock %}</h1>
+        <span>{% block text %}All things golf related{% endblock %}</span>
     </div>
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body">
@@ -62,12 +62,12 @@
     </div>
     <main>
         {% block content %}
-
+        
         {% endblock %}
     </main>
     <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
-        <button class="nav-button text-black">Click here to view our blog posts &raquo;</button>
+        <button class="nav-button text-black" >Click here to view our blog posts &raquo;</button>
         <button class="nav-button text-black">Click here to view our favourite golf courses &raquo;</button>
         <button class="nav-button text-black">Click here to view the background story of Darragh, the creator of TeeTime &raquo;</button>
     </div>

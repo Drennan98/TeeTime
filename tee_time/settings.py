@@ -39,14 +39,26 @@ ALLOWED_HOSTS = ['.gitpod.io',
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'django_summernote',
-    'blog'
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'blog',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
