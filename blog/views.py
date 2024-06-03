@@ -59,3 +59,7 @@ class UserProfileView(ListView):
     model = UserProfile
     template_name = "user_profile.html"
 
+class Comment(ListView):
+    model = Comment
+    template_name = "post_detail.html"
+
