@@ -7,19 +7,13 @@ STATUS = (
     (1, "Publish")
 )
 
-class Category(models.Model):
-    name = models.CharField(max_length=255)
-
-    def __str__(self):
-        return self.name
-
+# This is my blog post model. Users can share posts. 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='posts', null=True, blank=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -31,6 +25,7 @@ class Post(models.Model):
     class Meta:
         ordering = ['-created_on']
 
+# This is my comment model. Users can comment on posts.
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
@@ -47,9 +42,20 @@ class Comment(models.Model):
         return f"Comment by {self.name} on {self.post}"
 
 
+# This is my golf course model. Users can compare golf courses.
+class Course(models.Model):
+    name = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
+    description = models.TextField()
+    rating = models.FloatField()
+
+    def __str__(self):
+        return self.name
 
 
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    bio = models.TextField(blank=True)
 
-
-
-
+    def __str__(self):
+        return self.user.username

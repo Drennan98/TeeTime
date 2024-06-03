@@ -1,6 +1,6 @@
-from django.views import generic
+from django.views import generic, ListView
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post
+from .models import Post, Course, UserProfile, Comment
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
@@ -50,3 +50,12 @@ def signup(request):
         return redirect("home")
     
     return render (request, "home.html")
+
+class CourseListView(ListView):
+    model = Course
+    template_name = "course.html"
+
+class UserProfileView(ListView):
+    model = UserProfile
+    template_name = "user_profile.html"
+
