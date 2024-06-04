@@ -1,13 +1,15 @@
-from django.shortcuts import render
-from django.views import generic
-from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post
+from django.shortcuts import render, redirect
+from django.views import View
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 
 
 # Create your views here.
+
+class Signup(View):
+    def get(self, request):
+        return render(request, "signup.html")
 
 def signup(request):
     if request.method == "POST":
