@@ -18,10 +18,6 @@ class PostDetail(DetailView):
     model = Post
     template_name = "post_detail.html"
 
-def post_detail(request, slug):
-    post = get_object_or_404(Post, slug=slug)
-    queryset = Post.objects.filter(status=1)
-    return render(request, 'blog/post_detail.html', {'post': post})
 
 class CourseListView(ListView):
     model = Course
