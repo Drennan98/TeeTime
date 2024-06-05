@@ -24,7 +24,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-^inq!h42!vgg=#mn8&27y)d8lf!-u3!l$70ax0t!fu%a6+k612'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.gitpod.io', 
                  'localhost', 
@@ -154,7 +154,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-# ACCOUNT_FORMS = {
-#    'signup': 'tee_time.forms.CustomSignupForm',
-#}
 
