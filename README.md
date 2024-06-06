@@ -84,7 +84,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Django Summernote was used for the uploading of media files. 
 
-- PostgreSQL from Code Institute. ![https://dbs.ci-dbs.net/]
+- PostgreSQL from Code Institute ![https://dbs.ci-dbs.net/].
 
 ## Planning
 

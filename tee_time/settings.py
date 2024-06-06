@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'blog',
     'home',
     'signup',
+    'golfdata',
 ]
 
 SITE_ID = 1
