@@ -18,7 +18,6 @@ class PostDetail(DetailView):
     model = Post
     template_name = "post_detail.html"
 
-
 class CourseListView(ListView):
     model = Course
     template_name = "course.html"
