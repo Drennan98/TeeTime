@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Golf Scores</title>
+</head>
+<body>
+    <h1>Golf Scores</h1>
+    <ul>
+        {% for tournament in data %}
+        <li>
+            <h2>{{ tournament.TournamentName }}</h2>
+            <ul>
+                {% for player in tournament.Players %}
+                <li>{{ player.PlayerName }}: {{ player.TotalScore }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
