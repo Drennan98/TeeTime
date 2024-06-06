@@ -1,3 +1,7 @@
+{% extends "base.html" %}  
+
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Golf Scores</title>
 </head>
+<!-- Basic HTML structure for showing live golf data -->
+{% block content %}
 <body>
     <h1>Golf Scores</h1>
     <ul>
@@ -20,4 +26,5 @@
         {% endfor %}
     </ul>
 </body>
+{% endblock %}
 </html>
