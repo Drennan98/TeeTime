@@ -108,6 +108,10 @@ else:
             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e39c89e299c2ee60cd4e1e001e2120fc35156133
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
