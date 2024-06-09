@@ -31,7 +31,8 @@ ALLOWED_HOSTS = ['.gitpod.io',
                  'localhost:8000',
                  'localhost:3000', 
                  '.herokuapp.com', 
-                 'teetime0000-43f1c39ce1c8.herokuapp.com']
+                 'teetime0000-43f1c39ce1c8.herokuapp.com',
+                 'https://8000-drennan98-teetime-9fkkq71xnr4.ws-eu114.gitpod.io']
 
 
 # Application definition
@@ -157,4 +158,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-9fkkq71xnr4.ws-eu114.gitpod.io']
