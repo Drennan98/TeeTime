@@ -58,7 +58,7 @@
     <!-- Welcome message with option to register -->
     <div class="hero-unit">
         <h1 id="heading">Welcome to TeeTime</h1>
-        <p><a href="signup" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
+        <p><a href="{% url 'account_login' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
     </div>
     <main>
         {% block content %}

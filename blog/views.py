@@ -11,22 +11,21 @@ from django.contrib import messages
 class PostList(ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     model = Post
-    template_name = "home.html"
+    template_name = "home/home.html"
     paginate_by = 5
 
 class PostDetail(DetailView):
     model = Post
-    template_name = "post_detail.html"
+    template_name = "home/post_detail.html"
 
-class CourseListView(ListView):
+class Course(ListView):
     model = Course
-    template_name = "course.html"
+    template_name = "home/course.html"
 
 class UserProfileView(ListView):
     model = UserProfile
-    template_name = "user_profile.html"
+    template_name = "home/user_profile.html"
 
 class Comment(ListView):
     model = Comment
-    template_name = "post_detail.html"
-
+    template_name = "home/post_detail.html"
