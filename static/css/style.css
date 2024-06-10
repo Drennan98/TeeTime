@@ -169,3 +169,13 @@ button:hover {
 .buttons {
     margin: 60px;
 }
+
+/* Form Styles */
+
+#signup-button {
+    width: 15%;
+}
+
+#signin-span:hover {
+    text-decoration: underline;
+}

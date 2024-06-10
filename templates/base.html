@@ -45,7 +45,7 @@
                         <a class="nav-link active" href="#">Golf News</a>
                     </li>
                     <li class="nav-item text-black">
-                        <a class="nav-link active" href="#">Register</a>
+                        <a class="nav-link active" href="{% url 'account_signup' %}" href="#">Register</a>
                     </li>
                 </ul>
                 <form class="search-bar" class="d-flex" role="search">
@@ -55,15 +55,14 @@
             </div>
         </div>
     </nav>
+    {% block content %}
     <!-- Welcome message with option to register -->
     <div class="hero-unit">
         <h1 id="heading">Welcome to TeeTime</h1>
-        <p><a href="{% url 'account_login' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
+        <p><a href="{% url 'account_signup' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
     </div>
     <main>
-        {% block content %}
-        
-        {% endblock %}
+
     </main>
     <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
@@ -84,4 +83,5 @@
         </div>
     </footer>
 </body>
+{% endblock %}
 </html>
