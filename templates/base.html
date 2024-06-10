@@ -27,7 +27,7 @@
 <body>
     <!-- Header -->
     <div class="page-header">
-        <h1>TeeTime</h1>
+        <h1><a href="{% url 'home' %}">TeeTime</h1></a>
         <span>All things golf related</span>
     </div>
     <!-- Navigation bar -->
@@ -70,6 +70,7 @@
         <button class="nav-button text-black">Click here to view our favourite golf courses &raquo;</button>
         <button class="nav-button text-black">Click here to view the background story of Darragh, the creator of TeeTime &raquo;</button>
     </div>
+    {% endblock %}
     <footer class="footer-main">
         <div>
             <!-- Font Awesome script and icons -->
@@ -83,5 +84,4 @@
         </div>
     </footer>
 </body>
-{% endblock %}
 </html>
