@@ -179,3 +179,24 @@ button:hover {
 #signin-span:hover {
     text-decoration: underline;
 }
+
+#id_password1 {
+    width: 25%;
+}
+
+#id_password2 {
+    width: 25%;
+}
+
+#id_username {
+    width: 25%;
+}
+
+#id_email {
+    width: 25%;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 90%
+}
