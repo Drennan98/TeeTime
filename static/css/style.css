@@ -164,6 +164,7 @@ button:hover {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding: 85px;
 }
 
 .buttons {
@@ -198,5 +199,12 @@ button:hover {
 
 ul {
     list-style-type: none;
-    font-size: 90%
+}
+
+input {
+    font-size: 80%;
+}
+
+label {
+    font-size: 80%;
 }
