@@ -11,6 +11,7 @@ STATUS = (
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
+    content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -30,7 +31,6 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
     email = models.EmailField()
-    content = models.TextField()
     image = models.ImageField(upload_to='images/')
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
