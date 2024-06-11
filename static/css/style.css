@@ -144,6 +144,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    padding: 40px;
 }
 
 .pager a {
@@ -211,4 +212,11 @@ input {
 
 label {
     font-size: 80%;
+}
+
+/* Post styles */ 
+
+.masthead {
+    background-color: white;
+    padding-top: 50px;
 }
