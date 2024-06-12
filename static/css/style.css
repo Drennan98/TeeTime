@@ -117,6 +117,7 @@ a:hover {
 
 .post-returnhome:hover {
     text-decoration: underline;
+    background-color: white;;
 }
 
 button:hover {
@@ -136,7 +137,6 @@ button:hover {
     text-align: center;
     font-weight: 400;
 }
-
 
 .pager {
     list-style-type: none;
@@ -178,8 +178,14 @@ button:hover {
 
 /* Form Styles */
 
+form {
+    border: 2px solid white;
+    background-image: url(../images/form-background.jpg);
+}
+
 #signup-button {
     width: 15%;
+    color: black;
 }
 
 #signin-span:hover {
