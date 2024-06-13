@@ -23,6 +23,10 @@ a {
     color: black;
 }
 
+#golfball {
+    padding: 50px;
+}
+
 .signin {
     margin-top: 22px;
 }

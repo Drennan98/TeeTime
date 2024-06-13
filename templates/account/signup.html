@@ -7,8 +7,11 @@
 {% endblock head_title %}
 
 {% block content %}
+<!-- Sign In div with golf logos -->
     <div class="signin-div">
+        <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
        {% blocktranslate %}Already have an account? Then please {{ link }}<span class="signin-span">sign in</span>{{ end_link }}.{% endblocktranslate %}
+        <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
     </div>
     {% setvar link %}
         <a href="{{ login_url }}">
@@ -20,6 +23,7 @@
         {% url 'account_signup' as action_url %}
         {% element form form=form method="post" action=action_url tags="entrance,signup" %}
             {% slot body %}
+            <!-- Sign Up below heading inside the form -->
                 <div class="signup-below">
                 {% trans "Sign Up below for all the latest golf news!" %}
                 </div>
@@ -29,6 +33,7 @@
                 {{ home }}
             {% endslot %}
             {% slot actions %}
+            <!-- Sign Up button inside the form -->
                 <button id="signup-button" type="submit">
                     {% trans "Sign Up" %}
                 </button>
