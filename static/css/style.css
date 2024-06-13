@@ -23,6 +23,10 @@ a {
     color: black;
 }
 
+.signin {
+    margin-top: 22px;
+}
+
 h1 {
     background-color: #F45D01;
     padding: 10px 10px 10px 10px;
@@ -32,6 +36,12 @@ h1 {
 
 .container-fluid {
     width: 100%;
+}
+
+.signup-below {
+    margin-top: 30px;
+    background-color: white;
+    border: 5px solid white;
 }
 
 /* Form styles */
@@ -179,16 +189,24 @@ button:hover {
 /* Form Styles */
 
 form {
-    border: 2px solid white;
-    background-image: url(../images/form-background.jpg);
+    border: 10px solid white;
+    background-image: url(../images/form.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    border-style: groove;
 }
 
 #signup-button {
     width: 15%;
     color: black;
+    margin-bottom: 20px;
 }
 
-#signin-span:hover {
+.signin-span:hover {
+    text-decoration: underline;
+}
+
+.signup-span:hover {
     text-decoration: underline;
 }
 
@@ -210,6 +228,7 @@ form {
 
 ul {
     list-style-type: none;
+    color: #000000;
 }
 
 input {
@@ -218,6 +237,20 @@ input {
 
 label {
     font-size: 80%;
+}
+
+/* Login form styles */
+
+#id_login {
+    width: 25%;
+}
+
+#id_password {
+    width: 25%;
+}
+
+#id_remember {
+    width: 25%;
 }
 
 /* Post styles */ 
