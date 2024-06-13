@@ -56,6 +56,14 @@ h1 {
     margin: 50px;
 }
 
+.signup-div {
+    margin-top: 30px; 
+    background-color: aqua;
+    border: 5px solid white;
+    border-style: ridge;
+    margin: 50px;
+}
+
 /* Form styles */
 
 .form-container {
@@ -263,6 +271,19 @@ label {
 
 #id_remember {
     width: 25%;
+}
+
+.helptext {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 90%;
+}
+
+button {
+    width: 15%;
+    color: black;
+    margin-bottom: 20px;
 }
 
 /* Post styles */ 
