@@ -7,7 +7,9 @@
 {% endblock head_title %}
 
 {% block content %}
+    <div class="signin-div">
        {% blocktranslate %}Already have an account? Then please {{ link }}<span class="signin-span">sign in</span>{{ end_link }}.{% endblocktranslate %}
+    </div>
     {% setvar link %}
         <a href="{{ login_url }}">
         {% endsetvar %}
