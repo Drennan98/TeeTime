@@ -6,6 +6,7 @@ from .forms import GolfCourseForm
 
 # Create your views here.
 
+# Class based views 
 class GolfCourseListView(ListView):
     model = GolfCourse
     template_name = "golf_course.html"
