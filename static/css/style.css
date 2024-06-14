@@ -17,6 +17,11 @@ p {
     padding: 20px 0;
 }
 
+.wide-buttons {
+    margin: 10px;
+    width: 75%;
+}
+
 a {
     text-decoration: none;
     text-align: center;
@@ -186,6 +191,7 @@ a:hover {
 .page-header {
     background-color: #F45D01;
     padding: 20px 0;
+    border: 5px solid;
 }
 
 /* Social Media styles */
@@ -227,6 +233,7 @@ form {
 
 .form-button:hover {
     background-color: blue;
+    transition: 0.4s;
 }
 
 #id_password1 {
