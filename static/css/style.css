@@ -137,8 +137,7 @@ button {
 }
 
 a:hover {
-    background-color: #F45D01;
-    transition-duration: 0.4s;
+    text-decoration: underline;
 }
 
 .pager a:hover {
@@ -150,10 +149,6 @@ a:hover {
     background-color: white;;
 }
 
-button:hover {
-    background-color: #F45D01;
-    transition-duration: 0.4s;
-}
 
 /* Hero unit styles */
 
@@ -230,6 +225,10 @@ form {
     text-decoration: underline;
 }
 
+.form-button:hover {
+    background-color: blue;
+}
+
 #id_password1 {
     width: 25%;
 }
@@ -280,7 +279,7 @@ label {
     font-size: 90%;
 }
 
-button {
+.form-button {
     width: 15%;
     color: black;
     margin-bottom: 20px;

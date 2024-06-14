@@ -18,7 +18,6 @@
             <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
         </div>
         {% url 'account_login' as login_url %}
-        <div class="login-form">
         {% element form form=form method="post" action=login_url tags="entrance,login" %}
         {% element h1 %}
             {% trans "Sign In" %}
@@ -30,9 +29,9 @@
                 {{ redirect_field }}
             {% endslot %}
             {% slot actions %}
-                {% element button type="submit" tags="prominent,login" %}
+                <button class="form-button" type="submit">
                     {% trans "Sign In" %}
-                {% endelement %}
+                </button>
             {% endslot %}
         {% endelement %}
     {% endif %}
