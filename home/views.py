@@ -9,24 +9,24 @@ from .forms import GolfCourseForm
 # Class based views 
 class GolfCourseListView(ListView):
     model = GolfCourse
-    template_name = "golf_course.html"
+    template_name = "golfcourse_list.html"
 
 class GolfCourseDetailView(DetailView):
     model = GolfCourse 
-    template_name = "golf_course.html"
+    template_name = "golfcourse_detail.html"
 
 class GolfCourseCreateView(CreateView):
     model = GolfCourse
     form_class = GolfCourseForm
-    template_name = "golf_course.html"
+    template_name = "golfcourse_form.html"
     success_url = reverse_lazy("golfcourse_list")
 
 class GolfCourseUpdateView(UpdateView):
     model = GolfCourse 
     form_class = GolfCourseForm
-    template_name = "golf_course.html"
+    template_name = "golfcourse_form.html"
     success_url = reverse_lazy("golfcourse_list")
 
 class GolfCourseDeleteView(DeleteView):
     model = GolfCourse 
-    template_name = "golf_course.html"
+    template_name = "golfcourse_confirm_delete.html"

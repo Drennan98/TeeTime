@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load static %}
+    {% block content}
+    <h1 class="golf-course">Submit your favourite golf courses here!</h1>
+        <ul>
+            {% for course in course_list %}
+            <li><a href="{% url 'golfcourse_detail' course.pk %}">{{ course.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'golfcourse_create' %}">Add a new golf course</a>
+    {% endblock %}

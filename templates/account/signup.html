@@ -10,7 +10,7 @@
 <!-- Sign In div with golf logos -->
     <div class="signin-div">
         <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
-       {% blocktranslate %}Already have an account? Then please {{ link }}<span class="signin-span">sign in</span>{{ end_link }}.{% endblocktranslate %}
+        <p>Already have an account? Then please<a href="{% url 'account_login' %}">sign in</a></p>
         <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
     </div>
     {% setvar link %}
