@@ -4,7 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: center;
-    background-color: #F45D01;
+    background-color: #C2E4FF;
     margin: 0;
     padding: 0;
 }
@@ -37,7 +37,7 @@ a {
 }
 
 h1 {
-    background-color: #F45D01;
+    background-color: #C2E4FF;
     padding: 10px 10px 10px 10px;
     text-align: center;
     margin: 0;
@@ -145,10 +145,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.pager a:hover {
-    background-color: #F45D01;
-}
-
 .post-returnhome:hover {
     text-decoration: underline;
     background-color: white;;
@@ -161,8 +157,8 @@ a:hover {
     padding: 20px;
     margin: 0;
     font-size: 18px;
-    background-color: white;
-    border: 10px solid #F45D01;
+    background-color: #2D2D2D;
+    border: 10px solid #FFDDC2;
     border-radius: 4px;
     text-align: center;
     font-weight: 400;
@@ -189,7 +185,7 @@ a:hover {
 }
 
 .page-header {
-    background-color: #F45D01;
+    background-color: #C2E4FF;
     padding: 20px 0;
     border: 5px solid;
 }
