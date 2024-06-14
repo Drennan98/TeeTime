@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Confirm deletion with element of defensive programming -->
+    <h1>Confirm Delete</h1>
+    <p>Are you sure you want to delete "{{ object.name }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes of course</button>
+    </form>
+    <a href="{% url 'golfcourse_list' %}">Cancel please</a>
+{% endblock %}
