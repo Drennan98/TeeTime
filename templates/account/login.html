@@ -14,7 +14,7 @@
         {% endsetvar %}
         <div class="signup-div">
             <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
-            {% blocktranslate %}If you have not created an account yet, then please {{ link }}<span class="signup-span">sign up</span>{{ end_link }} first.{% endblocktranslate %}
+            <span>{% blocktranslate %}If you have not created an account yet, then please {{ link }}<span class="signup-span">sign up</span>{{ end_link }} first.{% endblocktranslate %}</span>
             <i class="fa-solid fa-golf-ball-tee" id="golfball"></i>
         </div>
         {% url 'account_login' as login_url %}
