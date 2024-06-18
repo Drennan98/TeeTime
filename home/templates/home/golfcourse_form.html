@@ -7,7 +7,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Save</button>
+        <button id="save-golfcourse-button" type="submit">Save</button>
     </form>
     <a href="{% url 'golfcourse_list' %}">Cancel</a>
 {% endblock %}

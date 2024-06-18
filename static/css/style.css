@@ -79,6 +79,7 @@ h1 {
 
 .submit-golfcourse-button {
     width: 50%;
+    margin-top: 60px;
 }
 
 /* Form styles */
@@ -306,3 +307,17 @@ label {
     background-color: white;
     padding-top: 50px;
 }
+
+/* Golf course submission form styles */ 
+
+#id_name, #id_location, #id_par, #id_holes {
+    width: 25%;
+}
+
+#save-golfcourse-button {
+    width: 10%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
