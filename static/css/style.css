@@ -13,6 +13,12 @@ body {
     text-align: center;
 }
 
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
 p {
     padding: 20px 0;
 }
@@ -200,7 +206,8 @@ a:hover {
 .page-header {
     background-color: #C2E4FF;
     padding: 20px 0;
-    border: 5px solid;
+    border: 20px solid black;
+    border-style: ridge;
 }
 
 /* Social Media styles */

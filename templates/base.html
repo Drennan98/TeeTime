@@ -33,25 +33,25 @@
         </header>
     </div>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body">
+    <nav class="navigation">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div>
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item text-black">
+                    <li class="nav-item">
                         <a class="nav-link active" href="{% url 'home' %}">Home</a>
                     </li>
-                    <li class="nav-item text-black">
+                    <li class="nav-item">
                         <a class="nav-link acive" href="{% url 'golfcourse_list' %}">Golf Courses</a>
                     </li>
-                    <li class="nav-item text-black">
+                    <li class="nav-item">
                         <a class="nav-link active" href="#">Golf News</a>
                     </li>
                     {% if request.user.is_authenticated %}
-                    <li class="nav-item text-black">
+                    <li class="nav-item">
                         <a class="nav-link active" href="{% url 'logout' %}">Logout</a>
                     </li>
                     {% else %}
-                    <li class="nav-item text-black">
+                    <li class="nav-item">
                         <a class="nav-link active" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     {% endif %}
