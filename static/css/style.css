@@ -13,10 +13,13 @@ body {
     text-align: center;
 }
 
-.navbar-nav {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+nav {
+    border: 10px ridge black;
+    margin: 20px;
+    background-image: url(../images/nav-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 p {
