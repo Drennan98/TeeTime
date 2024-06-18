@@ -46,9 +46,15 @@
                     <li class="nav-item text-black">
                         <a class="nav-link active" href="#">Golf News</a>
                     </li>
+                    {% if request.user.is_authenticated %}
                     <li class="nav-item text-black">
-                        <a class="nav-link active" href="{% url 'account_signup' %}" href="#">Register</a>
+                        <a class="nav-link active" href="{% url 'logout' %}">Logout</a>
                     </li>
+                    {% else %}
+                    <li class="nav-item text-black">
+                        <a class="nav-link active" href="{% url 'account_signup' %}">Register</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

@@ -103,9 +103,8 @@ WSGI_APPLICATION = 'tee_time.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-if "DATABASE_URL" in os.environ:
-    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
-else:
+if "postgres://ndzfxegu:QzVj4dbTF-m6rQaCLnM_Ifh_Mp20xIS2@bubble.db.elephantsql.com/ndzfxegu" in os.environ:
+    DATABASES = {"default": dj_database_url.parse(os.environ.get("postgres://ndzfxegu:QzVj4dbTF-m6rQaCLnM_Ifh_Mp20xIS2@bubble.db.elephantsql.com/ndzfxegu"))}
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
