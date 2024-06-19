@@ -72,7 +72,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - HMTL, CSS, JavaScript, Python and Django.
 
-- Balsamiq (Wireframes). 
+- [Balsamiq Wireframes.](https://balsamiq.com/) 
 
 - Heroku was used for deployment.
 
@@ -80,17 +80,17 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Git was used for version control --> "git add . " --> "git commit -m "**message**" --> "git push".
 
-- Google Fonts was used to import fonts for the project. 
+- [Google Fonts was used to import fonts for the project.](https://fonts.google.com/) 
 
-- PostgreSQL from Code Institute ![https://dbs.ci-dbs.net/].
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/).
 
-- The Code Institute database maker was also used ![https://dbs.ci-dbs.net/].
+- [The Code Institute database maker was also used](https://dbs.ci-dbs.net/).
 
-- WebGradients ![https://webgradients.com/].
+- [WebGradients](https://webgradients.com/).
 
-- Pexels ![https://webgradients.com/].
+- [Pexels](https://webgradients.com/).
 
-- Coolors ![https://coolors.co/].
+- [Coolors](https://coolors.co/).
 
 ## Planning
 
