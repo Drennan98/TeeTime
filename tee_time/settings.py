@@ -35,7 +35,8 @@ ALLOWED_HOSTS = ['.gitpod.io',
                  'localhost:3000', 
                  '.herokuapp.com', 
                  'teetime0000-43f1c39ce1c8.herokuapp.com',
-                 'https://8000-drennan98-teetime-9fkkq71xnr4.ws-eu114.gitpod.io']
+                 '8000-drennan98-teetime-71l9h6kfodw.ws.codeinstitute-ide.net',
+                 ]
 
 
 # Application definition
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'whitenoise',
     'blog',
     'home',
     'signup',
@@ -161,4 +163,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-9fkkq71xnr4.ws-eu114.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-71l9h6kfodw.ws.codeinstitute-ide.net']
