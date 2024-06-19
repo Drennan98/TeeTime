@@ -4,6 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: center;
+    /* Taken from webgradients.com */
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     margin: 0;
     padding: 0;
@@ -332,7 +333,7 @@ label {
 
 /* Scroll back to top button */
 
-#ScrollTop {
+#scrollTopButton {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -340,5 +341,10 @@ label {
     color: black;
     opacity: 80%;
 }
+
+.up-arrow {
+    padding-left: 20px;
+}
+
 
 
