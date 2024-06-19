@@ -116,4 +116,10 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 # Bugs 
 
-# Credits 
+# Credits
+
+- Spencer, my mentor for his insight and guidance through what was a huge challenge for me.
+
+- Tomas, for his patience and advice for this project. 
+
+- The Slack community. 
