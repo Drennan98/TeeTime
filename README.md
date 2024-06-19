@@ -82,9 +82,15 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Google Fonts was used to import fonts for the project. 
 
-- Django Summernote was used for the uploading of media files. 
-
 - PostgreSQL from Code Institute ![https://dbs.ci-dbs.net/].
+
+- The Code Institute database maker was also used ![https://dbs.ci-dbs.net/].
+
+- WebGradients ![https://webgradients.com/].
+
+- Pexels ![https://webgradients.com/].
+
+- Coolors ![https://coolors.co/].
 
 ## Planning
 
