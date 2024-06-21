@@ -297,13 +297,14 @@ input, input {
     padding-left: 20px;
 }
 
-.golf-course-list-button {
+.golf-course-list-button, .back-to-courseform-button {
     width: 25%;
     color: black;
 }
 
-.back-to-courseform-button {
-    width: 25%;
-    color: black;
+.golf-courselist-div {
+    border: 10px ridge black;
+    background-color: #07A0C3;
+    margin: 30px;
 }
 
