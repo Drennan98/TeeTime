@@ -33,7 +33,6 @@ p {
 }
 
 a {
-    text-decoration: none;
     text-align: center;
     color: black;
 }
@@ -239,7 +238,7 @@ form {
     margin-bottom: 20px;
 }
 
-.signin-span:hover, .golf-course-list-button, .signup-span:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover {
     text-decoration: underline;
 }
 
@@ -257,13 +256,10 @@ ul {
     color: #000000;
 }
 
-input {
+input, input {
     font-size: 80%;
 }
 
-label {
-    font-size: 80%;
-}
 
 /* Login form styles */
 
