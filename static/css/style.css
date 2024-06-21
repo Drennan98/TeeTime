@@ -154,7 +154,7 @@ button {
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover {
     text-decoration: underline;
 }
 
@@ -298,6 +298,11 @@ input, input {
 }
 
 .golf-course-list-button {
+    width: 25%;
+    color: black;
+}
+
+.back-to-courseform-button {
     width: 25%;
     color: black;
 }
