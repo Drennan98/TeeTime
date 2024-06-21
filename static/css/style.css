@@ -87,7 +87,7 @@ h1 {
 }
 
 .submit-golfcourse-button {
-    width: 50%;
+    width: 25%;
     margin-top: 60px;
 }
 
@@ -239,11 +239,7 @@ form {
     margin-bottom: 20px;
 }
 
-.signin-span:hover {
-    text-decoration: underline;
-}
-
-.signup-span:hover {
+.signin-span:hover, .golf-course-list-button, .signup-span:hover {
     text-decoration: underline;
 }
 
