@@ -8,7 +8,6 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button id="save-golfcourse-button" type="submit">Save</button>
+        <button id="cancel-golfcourse-button"><a href="{% url 'golfcourse_list' %}">Cancel</a></button>
     </form>
-    <a href="{% url 'golfcourse_list' %}">Cancel</a>
-    <button class="golf-course-list-button"><a href="{% url 'golf-courses' %}"></a>View list of golf courses!</button>
 {% endblock %}

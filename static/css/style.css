@@ -252,19 +252,7 @@ form {
     transition: 0.4s;
 }
 
-#id_password1 {
-    width: 25%;
-}
-
-#id_password2 {
-    width: 25%;
-}
-
-#id_username {
-    width: 25%;
-}
-
-#id_email {
+#id_password1, #id_password2, #id_username, #id_email {
     width: 25%;
 }
 
@@ -283,15 +271,7 @@ label {
 
 /* Login form styles */
 
-#id_login {
-    width: 25%;
-}
-
-#id_password {
-    width: 25%;
-}
-
-#id_remember {
+#id_login, #id_password, #id_remember {
     width: 25%;
 }
 
@@ -321,7 +301,7 @@ label {
     width: 25%;
 }
 
-#save-golfcourse-button {
+#save-golfcourse-button, #cancel-golfcourse-button {
     width: 10%;
     color: black;
     margin-bottom: 20px;
@@ -342,5 +322,8 @@ label {
     padding-left: 20px;
 }
 
-
+.golf-course-list-button {
+    width: 25%;
+    color: black;
+}
 

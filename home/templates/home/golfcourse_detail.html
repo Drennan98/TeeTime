@@ -4,12 +4,12 @@
 
 {% block content %}
 <!-- Layout of golf course submission form -->
-    <h1>{{ object.name }}</h1>
+    <h1>Submit your favourite golf courses here!</h1>
+    <h2>{{ object.name }}</h2>
     <p>Location: {{ object.location }}</p>
     <p>Par: {{ object.par }}</p>
     <p>Holes: {{ object.holes }}</p>
     <a href="{% url 'golfcourse_update' object.pk %}">Edit</a>
     <a href="{% url 'golfcourse_delete' object.pk %}"></a>
     <a href="{% url 'golfcourse_list' %}">Back to course list</a>
-    <button><a href="{% url 'golf-courses' %}"></a></button>
 {% endblock %}
