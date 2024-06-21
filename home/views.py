@@ -30,3 +30,7 @@ class GolfCourseUpdateView(UpdateView):
 class GolfCourseDeleteView(DeleteView):
     model = GolfCourse 
     template_name = "home/golfcourse_confirm_delete.html"
+
+def golf_courses_list(request):
+    courses = GolfCourse.objects.all()
+    return render(request, 'golf_course_display.html', {'courses': courses})

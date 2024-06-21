@@ -4,7 +4,8 @@ from .views import (
     GolfCourseDetailView,
     GolfCourseCreateView,
     GolfCourseUpdateView,
-    GolfCourseDeleteView
+    GolfCourseDeleteView,
+    golf_courses_list
 )
 
 from django.urls import path
@@ -21,5 +22,6 @@ urlpatterns = [
     path('create/', GolfCourseCreateView.as_view(), name='golfcourse_create'),
     path('<int:pk>/update/', GolfCourseUpdateView.as_view(), name='golfcourse_update'),
     path('<int:pk>/delete/', GolfCourseDeleteView.as_view(), name='golfcourse_delete'),
-    path('logout/', auth_views.LogoutView.as_view(), name='logout')
+    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+    path('golf-courses/', golf_courses_list, name='golf_courses_list')
 ]

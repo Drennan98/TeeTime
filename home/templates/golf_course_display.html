@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<body>
+    <h1>Golf Course List!</h1>
+    <ul>
+        {% for course in courses %}
+        <li>
+            <h2>{{ course.name }}</h2>
+            <p>Location: {{ course.location }}</p>
+            <p>{{ course.description }}</p>
+            <p>Submitted on: {{ course.submitted_at }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+{% endblock %}
