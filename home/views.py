@@ -33,4 +33,4 @@ class GolfCourseDeleteView(DeleteView):
 
 def golf_courses_list(request):
     courses = GolfCourse.objects.all()
-    return render(request, 'golf_course_display.html', {'courses': courses})
+    return render(request, 'home/golf_course_display.html', {'courses': courses})

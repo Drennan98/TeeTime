@@ -23,5 +23,5 @@ urlpatterns = [
     path('<int:pk>/update/', GolfCourseUpdateView.as_view(), name='golfcourse_update'),
     path('<int:pk>/delete/', GolfCourseDeleteView.as_view(), name='golfcourse_delete'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('golf-courses/', golf_courses_list, name='golf_courses_list')
+    path('golf-courses/', golf_courses_list, name='golf-courses')
 ]
