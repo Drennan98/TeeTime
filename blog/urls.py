@@ -7,7 +7,6 @@ from blog.views import PostDetail, PostList
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('home/', views.PostList.as_view(), name='home'),
-    path('post_detail/<int:pk>/', PostDetail.as_view(), name='post_detail'),
 ]
 
 if settings.DEBUG:

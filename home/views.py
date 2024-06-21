@@ -34,3 +34,12 @@ class GolfCourseDeleteView(DeleteView):
 def golf_courses_list(request):
     courses = GolfCourse.objects.all()
     return render(request, 'home/golf_course_display.html', {'courses': courses})
+
+def post_view(request):
+    post_id = ' '
+    url = reverse('post_detail', args=[post_id])
+    return redirect(url)
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'home/post_detail.html', {'post': post})
