@@ -17,6 +17,7 @@ class PostList(ListView):
 class PostDetail(DetailView):
     model = Post
     template_name = "home/post_detail.html"
+    context_object_name = "post"
 
 class Course(ListView):
     model = Course
