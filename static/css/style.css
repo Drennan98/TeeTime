@@ -318,7 +318,7 @@ input, input {
     color: black;
 }
 
-.golf-courselist-div, .signin-div, .signup-div {
+form, .golf-courselist-div, .signin-div, .signup-div {
     border: 10px ridge black;
     background-color: #07A0C3;
     margin: 30px;
