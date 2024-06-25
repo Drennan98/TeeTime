@@ -93,6 +93,11 @@ h1 {
     margin-top: 60px;
 }
 
+#logout-form {
+    background-image: none;
+    border: none;
+}
+
 /* Form styles */
 
 .form-container {
@@ -156,7 +161,7 @@ button {
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover {
     text-decoration: underline;
 }
 
@@ -287,7 +292,7 @@ input, input {
     width: 25%;
 }
 
-#save-golfcourse-button, #cancel-golfcourse-button {
+#save-golfcourse-button, #cancel-golfcourse-button, #signout-button {
     width: 10%;
     color: black;
     margin-bottom: 20px;

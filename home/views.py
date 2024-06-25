@@ -35,7 +35,7 @@ def golf_courses_list(request):
     courses = GolfCourse.objects.all()
     return render(request, 'home/golf_course_display.html', {'courses': courses})
 
-# def post_view(request):
-#     post_id = 1
-#     url = reverse('post_detail', args=[post_id])
-#     return redirect(url)
+def post_view(request):
+    post_id = 1
+    url = reverse('post_detail', args=[post_id])
+    return redirect(url)
