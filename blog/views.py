@@ -10,8 +10,7 @@ from django.contrib import messages
 # Class based views for mapping 
 class PostList(ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    model = Post
-    template_name = "home/home.html"
+    template_name = "home/index.html"
     paginate_by = 5
 
 class PostDetail(DetailView):
@@ -30,3 +29,6 @@ class UserProfileView(ListView):
 class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
+
+def home_view(request):
+    return render(request, "base.html")

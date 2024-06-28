@@ -39,3 +39,6 @@ def post_view(request):
     post_id = 1
     url = reverse('post_detail', args=[post_id])
     return redirect(url)
+    
+def home_view(request):
+    return render(request, "base.html")

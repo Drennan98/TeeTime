@@ -70,7 +70,7 @@
     </main>
     <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
-        <button class="wide-buttons text-black">Click here to view our blog posts &raquo;</button>
+        <button class="wide-buttons text-black"><a href="{% url 'blog' %}">Click here to view our blog posts &raquo;</button></a>
         <button class="wide-buttons text-black"><a href="{% url 'golfcourse_list' %}">Click here to submit and view our favourite golf courses &raquo;</button></a>
         <button class="wide-buttons text-black"><a href="{% url 'account_signup' %}">Click here to register for our golf blog &raquo;</button></a>
     </div>
