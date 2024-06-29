@@ -242,7 +242,7 @@ form {
     margin-bottom: 20px;
 }
 
-#id_password1, #id_password2, #id_username, #id_email {
+#id_password1, #id_password2, #id_username, #id_email, #id_title, #id_content {
     width: 25%;
 }
 
