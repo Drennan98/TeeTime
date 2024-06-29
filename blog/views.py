@@ -36,7 +36,7 @@ def create_post(request):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-            post.auther = request.user
+            post.author = request.user
             post.save()
             return redirect('post_detail', pk=post.pk)
         else:

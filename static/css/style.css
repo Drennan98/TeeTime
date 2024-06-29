@@ -98,6 +98,10 @@ h1 {
     border: none;
 }
 
+.create-postform-heading {
+    padding-top: 20px;
+}
+
 /* Form styles */
 
 .form-container {
@@ -161,7 +165,7 @@ button {
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover {
     text-decoration: underline;
 }
 
@@ -236,7 +240,7 @@ form {
     border-style: groove;
 }
 
-#signup-button {
+#signup-button, .save-post-button, .view-postlist-button {
     width: 15%;
     color: black;
     margin-bottom: 20px;

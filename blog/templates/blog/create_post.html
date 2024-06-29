@@ -4,11 +4,12 @@
 
 {% block content %}
 
-<h2>Create new blog post here!</h2>
+<h2 class="create-postform-heading">Create new blog post here!</h2>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Save</button>
+    <button type="submit" class="save-post-button">Save</button>
+    <button type="submit" class="view-postlist-button"><a href="{% url 'blog' %}">View posts here!</button></a>
 </form>
 
 {% endblock %}
