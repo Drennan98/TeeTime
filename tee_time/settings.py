@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['.gitpod.io',
                  'localhost:8000',
                  'localhost:3000', 
                  '.herokuapp.com', 
-                 'teetime0000-43f1c39ce1c8.herokuapp.com',
+                 'https://teetime0000-43f1c39ce1c8.herokuapp.com/',
                  '8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net',
                  ]
 

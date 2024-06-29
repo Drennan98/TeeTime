@@ -22,6 +22,7 @@ urlpatterns = [
     path('<int:pk>/update/', GolfCourseUpdateView.as_view(), name='golfcourse_update'),
     path('<int:pk>/delete/', GolfCourseDeleteView.as_view(), name='golfcourse_delete'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('golf-courses/', golf_courses_list, name='golf-courses'),
-    path('home/', views.home_view, name='home')
+    path('golf-courses/', views.golf_courses_list, name='golf-courses'),
+    path('home/', views.home_view, name='home'),
+    path('', views.home_view, name='home')
 ]

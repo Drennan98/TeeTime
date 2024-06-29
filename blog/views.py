@@ -30,5 +30,3 @@ class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
 
-def home_view(request):
-    return render(request, "base.html")

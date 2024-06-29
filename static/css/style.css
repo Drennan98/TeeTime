@@ -165,7 +165,7 @@ button {
     text-decoration: underline;
 }
 
-.form-button:hover {
+.form-button:hover, #signout-button:hover {
     background-color: purple;
     transition: 0.4s;
 }
