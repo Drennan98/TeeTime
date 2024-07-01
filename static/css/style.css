@@ -93,7 +93,7 @@ h1 {
     margin-top: 60px;
 }
 
-#logout-form {
+.logout-form {
     background-image: none;
     border: none;
 }

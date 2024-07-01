@@ -1,10 +1,12 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Course, UserProfile, Comment
+from .forms import PostForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
-from .forms import PostForm
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
@@ -31,6 +33,7 @@ class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
 
+@login_required
 def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
