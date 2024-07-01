@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from autoslug import AutoSlugField
 
 STATUS = (
     (0, "Draft"),
@@ -10,7 +11,7 @@ STATUS = (
 # This is my blog post model. Users can share posts. 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = AutoSlugField(populate_from='title', unique=True, always_update=True)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
     created_on = models.DateTimeField(auto_now_add=True)
