@@ -10,7 +10,7 @@
             <div class="row g-0">
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p>{{ post.content }}</p>
-                <p><small>By {{ post.author }} on {{ post.date_posted }}</small></p>
+                <p><small>By {{ post.author }} on {{ post.created_on }}</small></p>
                 <a class="post-returnhome" href="{% url 'home' %}">Return to home page</a>
             </div>
         </div>

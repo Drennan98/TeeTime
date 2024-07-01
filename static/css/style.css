@@ -14,6 +14,16 @@ body {
     text-align: center;
 }
 
+.btn {
+    font-size: 1em;
+}
+
+.container {
+    padding-top: 20px;
+    border: 10px ridge black;
+    background-color: #30C5FF;
+}
+
 nav {
     border: 10px ridge black;
     margin: 20px;
