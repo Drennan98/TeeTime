@@ -297,7 +297,7 @@ input, input {
 /* Post styles */ 
 
 .masthead {
-    background-color: white;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     padding-top: 50px;
 }
 
