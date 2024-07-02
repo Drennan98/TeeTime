@@ -1,6 +1,6 @@
 from allauth.account.forms import SignupForm
 from django import forms
-from .models import Post
+from .models import Post, Comment
 
 # Signup form using allauth 
 class CustomSignupForm(SignupForm):
@@ -14,8 +14,12 @@ class CustomSignupForm(SignupForm):
         user.save()
         return user
 
-
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content']
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['body']
