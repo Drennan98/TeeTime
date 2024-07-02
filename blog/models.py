@@ -39,7 +39,7 @@ class Comment(models.Model):
         ordering = ['created_on']
 
     def __str__(self):
-        return f"Comment by {self.name} on {self.post}"
+        return f"Comment by {self.author} on {self.post}"
 
 
 # This is my golf course model. Users can compare golf courses.
