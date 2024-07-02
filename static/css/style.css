@@ -176,7 +176,7 @@ button {
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover {
     text-decoration: underline;
 }
 
@@ -328,7 +328,7 @@ input, input {
     padding-left: 20px;
 }
 
-.golf-course-list-button, .back-to-courseform-button {
+.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton {
     width: 25%;
     color: black;
 }
@@ -346,7 +346,15 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 
 /* Comment styles */
 .comment {
-    padding-top: 40px;
     font-size: 1em;
-    font-style: italic;
+}
+
+.comment-button {
+    width: 25%;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.comment-form {
+    box-shadow: none;
 }
