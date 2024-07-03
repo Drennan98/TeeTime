@@ -12,6 +12,7 @@
         {% trans 'Are you sure you want to sign out?' %}
     {% endelement %}
     {% url 'account_logout' as action_url %}
+    <div class="logout">
     {% element form method="post" action=action_url no_visible_fields=True %}
         {% slot body %}
             {% csrf_token %}
@@ -23,4 +24,5 @@
             </button>
         {% endslot %}
     {% endelement %}
+    </div>
 {% endblock content %}

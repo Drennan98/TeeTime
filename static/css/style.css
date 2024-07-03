@@ -18,6 +18,12 @@ body {
     font-size: 1em;
 }
 
+.logout form {
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
 .container {
     padding-top: 20px;
     border: 10px ridge black;
@@ -198,31 +204,6 @@ button {
     box-shadow: 10px 10px;
 }
 
-.pager {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    padding: 40px;
-}
-
-.pager a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 10px;
-    transition: background-color 0.5s ease;
-}
-
-.page-header {
-    padding: 20px 0;
-    border: 20px solid black;
-    border-style: ridge;
-}
 
 .header-div {
     box-shadow: 10px 10px;
@@ -342,6 +323,10 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 .viewpost-button {
     width: 25%;
     font-size: 1em;
+}
+
+.viewpost-button:hover {
+    color: black;
 }
 
 /* Comment styles */

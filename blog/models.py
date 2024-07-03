@@ -46,6 +46,7 @@ class Comment(models.Model):
 class Course(models.Model):
     name = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
+    created_on = models.DateTimeField(auto_now_add=True)
     description = models.TextField()
     rating = models.FloatField()
 

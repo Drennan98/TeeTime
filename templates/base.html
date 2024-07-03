@@ -52,22 +52,22 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link active" href="{% url 'account_signup' %}">Register / Login</a>
                     </li>
                     {% endif %}
+                    </div>
                 </ul>
             </div>
-        </div>
+        </div>    
     </nav>
+    {% if not user.is_authenticated %}
+        <div class="hero-unit">
+            <h1 id="heading">Welcome to TeeTime</h1>
+            <p><a href="{% url 'account_signup' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
+        </div>
+    {% endif %}
     {% block content %}
     <!-- Welcome message with option to register -->
-    <div class="hero-unit">
-        <h1 id="heading">Welcome to TeeTime</h1>
-        <p><a href="{% url 'account_signup' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
-    </div>
-    <main>
-
-    </main>
     <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
         <button class="wide-buttons text-black"><a href="{% url 'create_post' %}">Click here to share a blog post and view other posts! &raquo;</button></a>
