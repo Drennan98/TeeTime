@@ -14,9 +14,13 @@
                 <p>Location: {{ course.location }}</p>
                 <p>{{ course.description }}</p>
                 <p>Submitted on: {{ course.created_on }}</p>
+                <form method="post" action="{% url 'delete_golfcourse' course.id %}" class="delete-course">
+                    {% csrf_token %}
+                    <button type="submit" class="deletecourse-button">Delete Course!</button>
+                    <button class="back-to-courseform-button"><a href="{% url 'golfcourse_list' %}">Back to course form!</a></button>
+                </form>
             </li>
             {% endfor %}
-            <button class="back-to-courseform-button"><a href="{% url 'golfcourse_list' %}">Back to course form!</a></button>
         </ul>
     </div>
 </body>

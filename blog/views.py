@@ -1,11 +1,13 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Course, UserProfile, Comment
-from .forms import PostForm, CommentForm
+from .forms import PostForm, CommentForm, Comment
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
+from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import DeleteView
 
 
 # Create your views here.
@@ -32,6 +34,10 @@ class UserProfileView(ListView):
 class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
+
+class PostDeleteView(DeleteView):
+    model = Post
+    success_url = reverse_lazy('blog')
 
 @login_required
 def create_post(request):
@@ -68,3 +74,10 @@ def post_detail(request, pk):
         'comments': comments,
         'comment_form': comment_form
     })
+
+@login_required
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+    if request.user == comment.author:
+        comment.delete()
+    return redirect('blog')

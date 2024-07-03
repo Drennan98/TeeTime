@@ -42,3 +42,9 @@ def post_view(request):
     
 def home_view(request):
     return render(request, "base.html")
+
+def delete_golfcourse(request, course_id):
+    course = get_object_or_404(GolfCourse, id=course_id)
+    if request.method == 'POST':
+        course.delete()
+        return redirect('golfcourse_list')

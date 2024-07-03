@@ -24,5 +24,6 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('golf-courses/', views.golf_courses_list, name='golf-courses'),
     path('home/', views.home_view, name='home'),
-    path('', views.home_view, name='home')
+    path('', views.home_view, name='home'),
+    path('delete/<int:course_id>/', views.delete_golfcourse, name='delete_golfcourse')
 ]

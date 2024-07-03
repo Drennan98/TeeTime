@@ -13,7 +13,11 @@
                     <h2>{{ post.title }}</h2>
                     <p>{{ post.author }} | {{ post.created_on }}</p>
                     <button class="viewpost-button"><a href="{% url 'post_detail' post.id %}" class="btn">View post! &raquo;</a></button>
-                </div>
+                    <form method="POST" action="{% url 'post_delete' post.id %}" class="delete-form">
+                        {% csrf_token %}
+                        <button type="submit" class="deletepost-button">Delete Post</button>
+                    </form>
+                </div> 
             </div>
             {% endfor %}
         </div>

@@ -343,3 +343,14 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 .comment-form {
     box-shadow: none;
 }
+
+.deletecourse-button {
+    color: black;
+    width: 25%;
+}
+
+.delete-course {
+    border: none;
+    box-shadow: none;
+    background-image: none;
+}
