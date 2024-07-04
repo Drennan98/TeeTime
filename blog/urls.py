@@ -7,7 +7,7 @@ from .views import edit_post, delete_post
 
 urlpatterns = [
     path('', PostList.as_view(), name='blog'),
-    path('post_detail/<int:pk>/', views.post_detail, name='post_detail'),
+    path('blog/post_detail/<int:pk>/', views.post_detail, name='post_detail'),
     path('post/new/', views.create_post, name='create_post'),
     path('delete_comment/<int:comment_id>/', views.delete_comment, name='delete_comment'),
     path('post/<int:pk>/delete/', views.delete_post, name='delete_post'),

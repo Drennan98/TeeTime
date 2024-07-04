@@ -319,7 +319,7 @@ input, input {
     padding-left: 20px;
 }
 
-.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton, .viewpost-button, .view-postlist-button, .editpost-button, .save-post-button {
+.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton, .viewpost-button, .view-postlist-button, .editpost-button, .save-post-button, .deletecourse-button {
     width: 25%;
     color: black;
     font-size: 1em;
