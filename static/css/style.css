@@ -182,7 +182,7 @@ button {
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover, .deletecourse-button:hover {
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover, .deletecourse-button:hover, .deletepost-button:hover, .editpost-button:hover {
     text-decoration: underline;
 }
 
@@ -194,9 +194,7 @@ button {
 .deletepost-button {
     color: black;
     width: 25%;
-    background-image: none;
-    border: none;
-    box-shadow: none;
+    font-size: 1em;
 }
 
 
@@ -240,7 +238,7 @@ form {
     border-style: groove;
 }
 
-#signup-button, .save-post-button, .view-postlist-button {
+#signup-button, .save-post-button, .view-postlist-button  {
     width: 15%;
     color: black;
     margin-bottom: 20px;
@@ -321,24 +319,16 @@ input, input {
     padding-left: 20px;
 }
 
-.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton {
+.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton, .viewpost-button, .view-postlist-button, .editpost-button, .save-post-button {
     width: 25%;
     color: black;
+    font-size: 1em;
 }
 
 form, .golf-courselist-div, .signin-div, .signup-div {
     border: 10px ridge black;
     margin: 30px;
     box-shadow: 10px 10px;
-}
-
-.viewpost-button {
-    width: 25%;
-    font-size: 1em;
-}
-
-.viewpost-button:hover {
-    color: black;
 }
 
 /* Comment styles */

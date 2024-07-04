@@ -13,7 +13,6 @@
                 <p><small>By {{ post.author }} on {{ post.created_on }}</small></p>
                 <button class="post-returnhome-button"><a href="{% url 'home' %}">Return to home page</a></button>
             </div>
-
             <ul>
                 {% for comment in comments %}
                 <li>
@@ -28,6 +27,7 @@
                 </li>
                 {% endfor %}
             </ul>
+
             <h2>Add a comment here...</h2>
             {% if request.user.is_authenticated %}
             <form method="post" class="comment-form">

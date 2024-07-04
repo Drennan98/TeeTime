@@ -78,6 +78,25 @@ def post_detail(request, pk):
 @login_required
 def delete_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
+    post_id = comment.post.pk
     if request.user == comment.author:
         comment.delete()
-    return redirect('blog')
+        message.success(request, "Comment successfully deleted.")
+    else:
+        messages.error(request, "You cannot delete this comment.")
+    return redirect('post_detail', pk=comment.post_id)
+
+def edit_post(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.user != post.author and not request.user.is_superuser:
+        return redirect('post_detail', pk=post.pk)
+
+    if request.method == "POST":
+        form = EditForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+        else:
+            form = EditForm(instance=post)
+        return render(request, 'blog/edit_post.html', {'form': form})

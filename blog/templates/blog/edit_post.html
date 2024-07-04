@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <h2>Edit Post</h2>
+    <form method="post" class="editpost-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="editpost-button">Edit Post</button>
+    </form>
+{% endblock %}
