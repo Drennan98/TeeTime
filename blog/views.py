@@ -35,9 +35,9 @@ class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
 
-class PostDeleteView(DeleteView):
-    model = Post
-    success_url = reverse_lazy('blog')
+# class PostDeleteView(DeleteView):
+#     model = Post
+#     success_url = reverse_lazy('blog')
 
 @login_required
 def create_post(request):
@@ -85,6 +85,15 @@ def delete_comment(request, comment_id):
     else:
         messages.error(request, "You cannot delete this comment.")
     return redirect('post_detail', pk=comment.post_id)
+
+def delete_post(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == 'POST':
+        post.delete()
+        response = redirect('create_post')
+        # response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        return response
+    return render(request, 'blog/create_post.html', {'post': post})
 
 def edit_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
