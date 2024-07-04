@@ -14,9 +14,9 @@
                     <p>{{ post.author }} | {{ post.created_on }}</p>
                     <form method="POST" action="{% url 'delete_post' post.id %}" class="delete-form">
                         {% csrf_token %}
-                        <button type="submit" class="deletepost-button"><a href="{% url 'delete_post' post.id %}">Delete Post! &raquo;</a></button>
+                        <button type="submit" class="deletepost-button">Delete Post! &raquo;</button>
                         <button class="viewpost-button"><a href="{% url 'post_detail' post.id %}">View Post! &raquo;</a></button>
-                        <button class="editpost-button"><a href="{% url 'edit_post' post.pk %}"></a>Edit Post! &raquo;</button>
+                        <button class="editpost-button"><a href="{% url 'edit_post' post.pk %}">Edit Post! &raquo;</a></button>
                     </form>
                 </div> 
             </div>

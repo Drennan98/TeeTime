@@ -1,7 +1,7 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Course, UserProfile, Comment
-from .forms import PostForm, CommentForm, Comment
+from .forms import PostForm, CommentForm, EditForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
@@ -97,15 +97,17 @@ def delete_post(request, pk):
 
 def edit_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
+
     if request.user != post.author and not request.user.is_superuser:
-        return redirect('post_detail', pk=post.pk)
+        return redirect('edit_post', pk=post.pk)
 
     if request.method == "POST":
         form = EditForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('post_detail', pk=post.pk)
-        else:
-            form = EditForm(instance=post)
-        return render(request, 'blog/edit_post.html', {'form': form})
+            return redirect('edit_post', pk=post.pk)
+    else:
+        form = EditForm(instance=post)
+
+    return render(request, 'blog/edit_post.html', {'form': form})
