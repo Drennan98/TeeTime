@@ -356,3 +356,62 @@ form, .golf-courselist-div, .signin-div, .signup-div {
     box-shadow: none;
     background-image: none;
 }
+
+/* Media queries for responsiveness */ 
+
+/* Larger devices (max 992px) */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Media query: tablets and larger (max 768px) */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Media query: large or landscape phones (max 576px) */
+@media screen and (max-width: 576px) {
+    
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30%;
+        color: black;
+        opacity: 80%;
+    }
+
+    .golf-course-list-button {
+        font-size: 0.6em;
+    }
+
+    #save-golfcourse-button, #cancel-golfcourse-button {
+        width: 40%;
+    }
+
+    .deletecourse-button, .back-to-courseform-button {
+        font-size: 0.5em;
+    }
+
+    .form-button {
+        font-size: 0.6em;
+    }
+
+    .signup-div {
+        font-size: 0.7em;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .save-post-button, .view-postlist-button, .post-returnhome-button, .add-commentbutton {
+        font-size: 0.5em;
+    }
+
+    #id_content, #id_title, #id_body {
+        width: 75%;
+    }
+
+    .deletepost-button, .editpost-button, .viewpost-button {
+        font-size: 0.52em;
+    }
+}
