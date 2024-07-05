@@ -78,6 +78,17 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 ![MoSCoW Prioritization for TeeTime](static/images/moscow.png)
 
+- Must Have labels are essential features. 
+
+- Should Have labels indicated that these features are important but not vital. 
+
+- Could Have labels indicate features that are desirable but not necessary.
+
+- Wont Have labels indicate features that are least critical and will not be implemented. 
+
+- I found that it was an efficient of managing my time and putting my time into the most important part of my project while implementing the most important features first
+and working my way down the priority list. 
+
 # Features 
 
 # Design
