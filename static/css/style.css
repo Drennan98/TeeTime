@@ -414,4 +414,8 @@ form, .golf-courselist-div, .signin-div, .signup-div {
     .deletepost-button, .editpost-button, .viewpost-button {
         font-size: 0.52em;
     }
+
+    #signout-button {
+        width: 60%;
+    }
 }
