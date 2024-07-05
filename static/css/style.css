@@ -366,6 +366,16 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 
 /* Media query: tablets and larger (max 768px) */
 @media screen and (max-width: 768px) {
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30%;
+        color: black;
+        opacity: 80%;
+    }
+
+    
 
 }
 
