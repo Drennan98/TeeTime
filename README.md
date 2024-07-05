@@ -4,7 +4,7 @@
 
 # Project Purpose
 
-This is the 4th project for the diploma in Full Stack Software Development with Code Institute. TeeTime is a blog where users can interact with eachother, compare favourite golf courses and chat about all things golf. The website will offer users the ability to create, like and delete posts while also rate courses that other users have shared. They will also be able to like and comment on eachother posts. Think of it as Instagram or Facebook but for golfers. This is a full stack website which incorporates the Django framework. One my main goals is to get people into the game of golf so once users have engaged with content on the site, they can register for the golf newsletter. The site will also include a background story of myself and how I got into golf, where I'm currently at now with my golf game and my future plans. 
+This is the 4th project for the diploma in Full Stack Software Development with Code Institute. TeeTime is a blog where users can interact with eachother, compare favourite golf courses and chat about all things golf. The website will offer users the ability to create, edit delete posts. They will also be able to comment on eachother posts. Think of it as Instagram or Facebook but for golfers. This is a full stack website which incorporates the Django framework. One my main goals is to get people into the game of golf so once users have engaged with content on the site.
 
 # User Experience (UX)
 
@@ -15,6 +15,16 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 - Create a social network for golfers to collaborate and potentially book tee times together. 
 
 - Become a hub for golfers to share all things golf related. 
+
+- Allow users to create, edit and delete posts. 
+
+- Allow users to create and delete comments. 
+
+- Give the ability to users to register, sign in and sign out of the site. 
+
+- Reflect the log in state to the user. 
+
+- Create an easy to navigate, user friendly site. 
 
 ## Target Audience 
 
