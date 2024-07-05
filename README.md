@@ -74,6 +74,10 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 ## MoSCoW Prioritization
 
+- I used MoSCoW prioritization to rank how essential each feature would be. See image below for my user stories and how I labelled them. 
+
+![MoSCoW Prioritization for TeeTime](static/images/moscow.png)
+
 # Features 
 
 # Design
