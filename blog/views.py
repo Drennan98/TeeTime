@@ -35,10 +35,6 @@ class Comment(ListView):
     model = Comment
     template_name = "home/post_detail.html"
 
-# class PostDeleteView(DeleteView):
-#     model = Post
-#     success_url = reverse_lazy('blog')
-
 @login_required
 def create_post(request):
     if request.method == 'POST':
@@ -101,12 +97,12 @@ def edit_post(request, pk):
     if request.user != post.author and not request.user.is_superuser:
         return redirect('edit_post', pk=post.pk)
 
-    if request.method == "POST":
+    if request.method == 'POST':
         form = EditForm(request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('post_list', pk=post.pk)
+            return redirect('post_list')
     else:
         form = EditForm(instance=post)
 
@@ -114,6 +110,7 @@ def edit_post(request, pk):
 
 class UpdatePostView(UpdateView):
     model = Post
+    fields = ['title', 'content']
     form_class = PostForm
-    template_name = 'edit_post.html'
-    success_url = reverse_lazy('post_list')
+    template_name = 'blog/edit_post.html'
+    context_object_name = 'post'

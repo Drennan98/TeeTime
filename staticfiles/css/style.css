@@ -1,0 +1,431 @@
+/* General styles */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    /* Taken from webgradients.com */
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    margin: 0;
+    padding: 0;
+}
+
+#hero-heading {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1em;
+}
+
+.logout form {
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+.container {
+    padding-top: 20px;
+    border: 10px ridge black;
+    background-color: #30C5FF;
+    box-shadow: 10px 10px;
+}
+
+nav {
+    border: 10px ridge black;
+    margin: 20px;
+    background-image: url(../images/nav-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 10px 10px;
+}
+
+p {
+    padding: 20px 0;
+}
+
+.wide-buttons {
+    margin: 10px;
+    width: 75%;
+}
+
+a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+#golfball {
+    padding: 50px;
+}
+
+.signin {
+    margin-top: 22px;
+}
+
+h1 {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.signup-below {
+    margin-top: 30px;
+    background-color: white;
+    border: 5px solid white;
+}
+
+.signup-div {
+    margin-top: 30px; 
+    background-color: aqua;
+    border: 5px solid white;
+    border-style: ridge;
+    margin: 50px;
+}
+
+.signin-div {
+    margin-top: 30px; 
+    background-color: aqua;
+    border: 5px solid white;
+    border-style: ridge;
+    margin: 50px;
+    box-shadow: 10px 10px;
+}
+
+#signin {
+    padding-left: 5px;
+}
+
+.submit-course {
+    padding-top: 50px;
+}
+
+.submit-golfcourse-button {
+    width: 25%;
+    margin-top: 60px;
+}
+
+.logout-form {
+    background-image: none;
+    border: none;
+}
+
+.create-postform-heading {
+    padding-top: 20px;
+}
+
+/* Form styles */
+
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+#form-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+/* Search bar styles */
+
+.search-bar {
+    display: flex;
+}
+
+/* Post styles */
+
+.post-list {
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+/* Hover pseudo classes */
+
+.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover, .deletecourse-button:hover, .deletepost-button:hover, .editpost-button:hover {
+    text-decoration: underline;
+}
+
+.form-button:hover, #signout-button:hover {
+    background-color: purple;
+    transition: 0.4s;
+}
+
+.deletepost-button {
+    color: black;
+    width: 25%;
+    font-size: 1em;
+}
+
+
+/* Hero unit styles */
+
+.hero-unit {
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px;
+    border: 10px ridge black;
+    box-shadow: 10px 10px;
+}
+
+
+.header-div {
+    box-shadow: 10px 10px;
+}
+
+/* Social Media styles */
+
+#social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 85px;
+}
+
+.buttons {
+    margin: 60px;
+}
+
+/* Form Styles */
+
+form {
+    border: 10px solid white;
+    background-image: url(../images/form.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    border-style: groove;
+}
+
+#signup-button, .save-post-button, .view-postlist-button  {
+    width: 15%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#id_password1, #id_password2, #id_username, #id_email, #id_title, #id_content {
+    width: 25%;
+}
+
+#id_email {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    color: #000000;
+}
+
+input, input {
+    font-size: 80%;
+}
+
+.deletepost-button {
+    color: black;
+}
+
+
+/* Login form styles */
+
+#id_login, #id_password, #id_remember {
+    width: 25%;
+}
+
+.helptext {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 90%;
+}
+
+.form-button {
+    width: 15%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Post styles */ 
+
+.masthead {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    padding-top: 50px;
+}
+
+/* Golf course submission form styles */ 
+
+#id_name, #id_location, #id_par, #id_holes {
+    width: 25%;
+}
+
+#save-golfcourse-button, #cancel-golfcourse-button, #signout-button, .post-returnhome-button {
+    width: 10%;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Scroll back to top button */
+
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 10%;
+    color: black;
+    opacity: 80%;
+}
+
+.up-arrow {
+    padding-left: 20px;
+}
+
+.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton, .viewpost-button, .view-postlist-button, .editpost-button, .save-post-button, .deletecourse-button {
+    width: 25%;
+    color: black;
+    font-size: 1em;
+}
+
+form, .golf-courselist-div, .signin-div, .signup-div {
+    border: 10px ridge black;
+    margin: 30px;
+    box-shadow: 10px 10px;
+}
+
+/* Comment styles */
+.comment {
+    font-size: 1em;
+}
+
+.comment-button {
+    width: 25%;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.comment-form {
+    box-shadow: none;
+}
+
+.deletecourse-button {
+    color: black;
+    width: 25%;
+}
+
+.delete-course, .delete-form {
+    border: none;
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Media queries for responsiveness */ 
+
+/* Larger devices (max 992px) */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Media query: tablets and larger (max 768px) */
+@media screen and (max-width: 768px) {
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30%;
+        color: black;
+        opacity: 80%;
+    }
+
+    
+
+}
+
+/* Media query: large or landscape phones (max 576px) */
+@media screen and (max-width: 576px) {
+    
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30%;
+        color: black;
+        opacity: 80%;
+    }
+
+    .golf-course-list-button {
+        font-size: 0.6em;
+    }
+
+    #save-golfcourse-button, #cancel-golfcourse-button {
+        width: 40%;
+    }
+
+    .deletecourse-button, .back-to-courseform-button {
+        font-size: 0.5em;
+    }
+
+    .form-button {
+        font-size: 0.6em;
+    }
+
+    .signup-div {
+        font-size: 0.7em;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .save-post-button, .view-postlist-button, .post-returnhome-button, .add-commentbutton {
+        font-size: 0.5em;
+    }
+
+    #id_content, #id_title, #id_body {
+        width: 75%;
+    }
+
+    .deletepost-button, .editpost-button, .viewpost-button {
+        font-size: 0.52em;
+    }
+
+    #signout-button {
+        width: 60%;
+    }
+}

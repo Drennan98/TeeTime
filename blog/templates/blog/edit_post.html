@@ -8,7 +8,7 @@
 <form method="post" class="editpost-form">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="editpost-button"><a href="{% url 'post_list' %}"></a>Save</button>
+    <button type="submit" class="editpost-button"><a href="{% url 'post_list' %}">Save</a></button>
 </form>
 
 {% endblock %}
