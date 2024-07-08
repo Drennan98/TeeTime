@@ -101,7 +101,7 @@ def edit_post(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('edit_post', pk=post.pk)
+            return redirect('post_detail', pk=post.pk)
     else:
         form = EditForm(instance=post)
 
