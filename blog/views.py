@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import DeleteView, UpdateView
+from django.views.generic.edit import DeleteView
 
 
 # Create your views here.
@@ -87,7 +87,6 @@ def delete_post(request, pk):
     if request.method == 'POST':
         post.delete()
         response = redirect('create_post')
-        # response['Cache-Control'] = 'no-cache, no-store, must-revalidate'
         return response
     return render(request, 'blog/create_post.html', {'post': post})
 
@@ -102,15 +101,8 @@ def edit_post(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('post_list')
+            return redirect('edit_post', pk=post.pk)
     else:
         form = EditForm(instance=post)
 
-    return render(request, 'blog/edit_post.html', {'form': form})
-
-class UpdatePostView(UpdateView):
-    model = Post
-    fields = ['title', 'content']
-    form_class = PostForm
-    template_name = 'blog/edit_post.html'
-    context_object_name = 'post'
+    return render(request, 'blog/edit_post.html', {'form': form, 'post': post})

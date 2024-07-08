@@ -16,7 +16,7 @@
                         {% csrf_token %}
                         <button type="submit" class="deletepost-button">Delete Post! &raquo;</button>
                         <button class="viewpost-button"><a href="{% url 'post_detail' post.id %}">View Post! &raquo;</a></button>
-                        <button class="editpost-button"><a href="{% url 'edit_post' post.pk %}">Edit Post! &raquo;</a></button>
+                        <button class="editpost-button"><a href="{% url 'edit_post' post.id %}">Edit Post! &raquo;</a></button>
                     </form>
                 </div> 
             </div>
