@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import DeleteView
+from django.views.generic.edit import DeleteView, UpdateView
 
 
 # Create your views here.
@@ -106,8 +106,14 @@ def edit_post(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('edit_post', pk=post.pk)
+            return redirect('post_list', pk=post.pk)
     else:
         form = EditForm(instance=post)
 
     return render(request, 'blog/edit_post.html', {'form': form})
+
+class UpdatePostView(UpdateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'edit_post.html'
+    success_url = reverse_lazy('post_list')
