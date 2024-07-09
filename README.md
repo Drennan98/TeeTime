@@ -187,7 +187,17 @@ and working my way down the priority list.
 
 # Deployment
 
-- Deployment steps go here...
+### The deployment process is done on a platform called Heroku. The deployment process is lengthy but is as follows:
+
+- Create a Heroku account if you haven't done so already. If you're a Code Institute student then you most likely already have one. 
+
+- Create a new app, give the app a unique name and select your region from the options.
+
+- Connect to GitHub (you might be asked to login).
+
+- Select which branch you want to deploy from. 
+
+- Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
 # Bugs 
 
