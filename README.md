@@ -115,6 +115,15 @@ and working my way down the priority list.
 
 ![CRUD Example](static/images/crudexample.png)
 
+## Register / Login 
+
+- This is the part of the application where the user can register or log into the site. The user will **NOT** be allowed to create and share posts unless they're logged in. The user picks a username, a password and then confirms the password by typing it again. (Note: you might be wondering why you see "Email (optional):" and this is because I changed the account authentication method in settings.py throughout the project and hid the input for email. However, at the time of writing this README, I didn't figure out how to hide the heading for this input, I just figured it was easier to pick a username instead of an email and username). There will be instructions in this form for deciding on a strong password. Just above the sign up form you will see a turquoise box which will enable the user to **sign in** should they already have an acccount. 
+
+![SignUp Form](static/images/signupform.png)
+
+- See below for Sign In form. 
+
+![SignIn Form](static/images/signinform.png)
 
 # Design
 
@@ -141,6 +150,8 @@ and working my way down the priority list.
 - [Pexels](https://webgradients.com/).
 
 - [Coolors](https://coolors.co/).
+
+- Django Aullauth was used for handling the forms and allowing users to register and sign in. 
 
 ## Planning
 
