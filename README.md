@@ -173,7 +173,21 @@ and working my way down the priority list.
 
 ## Color Palette
 
-## Wireframes (include different screen sizes)
+## Wireframes (include different screen sizes)\
+
+- Wireframes are basic skeleton guides that show the potential layout of a site and its content. I used Balsamiq to create my wireframes. **See below for some examples:**
+
+## Post Feed Wireframe
+
+![Article Feed](static/images/articlefeedwireframe.png)
+
+## Landing Page Wireframe
+
+![Landing Page](static/images/landingpagewireframe.png)
+
+## Signup Form Wireframe
+
+![Signup Form](static/images/signupformwireframe.png)
 
 ## Fonts
 
@@ -200,6 +214,8 @@ and working my way down the priority list.
 - Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
 # Bugs 
+
+- The "Email (optional):" heading still shows in the form even though I have set the input to hidden. At the time of writing this readme, I did not have time to fix this issue. 
 
 # Credits
 
