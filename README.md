@@ -129,9 +129,17 @@ and working my way down the priority list.
 
 ![SignOut Screen](static/images/signoutscreen.png)
 
-
-
 # Design
+
+ ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
+
+- I used a pretty simple [web gradient](https://webgradients.com/) as a background image.
+
+- I used a golf ball background images for my navbar. 
+
+- I gave all divs a consistent border and border styles aswell as some box-shadow. 
+
+- All buttons are underline upon hovering on them. This is so users know that they're hovering over a button. 
 
 ## Technologies Used 
 
