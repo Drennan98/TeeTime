@@ -109,6 +109,12 @@ and working my way down the priority list.
 
 ![Login Status](static/images/loginstatus.png)
 
+## Create, Read, Update, Delete (CRUD) Functionality
+
+- This was one of the most important parts of the project but also one of the toughest to get right. I found myself really struggling to get the buttons and features working for this but was without a doubt super rewarding to see it all wired up. If the user clickc **Golf News** or **Click here to share a blog post and view other posts!** they will be allowed to Create a blog post. Then the user can Read the blog post by clicking **View posts here!**, where they will be presented with 3 buttons which control what the user can do with the posts. **Edit post!** controls the Update part of CRUD functionality while **Delete post!** allows the user to delete a blog post. 
+
+![CRUD Example](static/images/crudexample.png)
+
 
 # Design
 
