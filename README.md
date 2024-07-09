@@ -72,6 +72,12 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 10. Background story of creator. 
 
+## Kanban Board 
+
+- I mapped my User Stories onto my Kanban Board on GitHub. I found it very useful for project management and it was easy to identify which features were in the backlog, which features were in progress and which features were ready. My Kanban Board is public and can be viewed in the repository on GitHub but I will attach a screenshot here. 
+
+![Kanban Board](static/images/kanbanboard.png)
+
 ## MoSCoW Prioritization
 
 - I used MoSCoW prioritization to rank how essential each feature would be. See image below for my user stories and how I labelled them. 
@@ -173,7 +179,7 @@ and working my way down the priority list.
 
 ## Color Palette
 
-## Wireframes (include different screen sizes)\
+## Wireframes (include different screen sizes)
 
 - Wireframes are basic skeleton guides that show the potential layout of a site and its content. I used Balsamiq to create my wireframes. **See below for some examples:**
 
@@ -189,7 +195,13 @@ and working my way down the priority list.
 
 ![Signup Form](static/images/signupformwireframe.png)
 
-## Fonts
+## iPad Landing Page Wireframe 
+
+![iPad Landing Page](static/images/ipadlandingpagewireframe.png)
+
+## iPhone Landing Page Wireframe 
+
+![iPhone Landing Page](static/images/iphonelandingpagewireframe.png)
 
 ## Layout
 
