@@ -510,9 +510,3 @@ form, .golf-courselist-div, .signin-div, .signup-div {
         margin: 20px;
     }
 }
-
-@media screen and (max-width: 250px) {
-    nav div ul li {
-        font-size: 0.6em;
-    }
-}
