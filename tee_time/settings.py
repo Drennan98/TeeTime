@@ -163,4 +163,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net',
+'https://teetime0000-43f1c39ce1c8.herokuapp.com/']

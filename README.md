@@ -207,6 +207,10 @@ and working my way down the priority list.
 
 # Testing 
 
+## Browser Compatibility 
+
+- The site works as intended on Google Chrome and Safari. No issuses were reported. 
+
 ## Validations 
 
 ## Lighthouse Testing (Desktop and Mobile)
