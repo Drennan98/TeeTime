@@ -225,7 +225,7 @@ and working my way down the priority list.
 
 - Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
-# Forking 🍴
+# Forking 
 
 - Forking a repository on GitHub essentially means creating a copy of someone else's project repository. One benefit of this would be that you can make changes to the project without affecting the original repo. To fork a repo, **please follow the below steps:**
 
@@ -236,6 +236,22 @@ and working my way down the priority list.
 3. Once you hit the fork button, it will bring you to the **"Create a new fork screen"**. 
 
 4. You can then hit the green **"Create fork"** button. 
+
+# Cloning 
+
+- Cloning a repo means copying the entire project repository to your machine. To clone a repo, **please follow the below steps:**
+
+1. Navigate to the repository you want to clone. 
+
+2. Click the green code button. 
+
+3. You will see three subheadings of HTTPS, SSH and GitHub CLI. Copy the URL under the HTTPS subheading. 
+
+4. Open the terminal in your IDE (e.g VS Code or GitPod). 
+
+5. Type the command "git clone" with the URL you copied in the step 3. 
+
+6. Finally, hit Enter. 
 
 # Bugs 
 
