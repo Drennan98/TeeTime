@@ -84,6 +84,8 @@ def delete_comment(request, comment_id):
 
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    if request.user != post.author and not request.user.is_superuser:
+        return redirect('post_list', pk=post.pk)
     if request.method == 'POST':
         post.delete()
         response = redirect('create_post')
@@ -94,7 +96,7 @@ def edit_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
 
     if request.user != post.author and not request.user.is_superuser:
-        return redirect('edit_post', pk=post.pk)
+        return redirect('post_list', pk=post.pk)
 
     if request.method == 'POST':
         form = EditForm(request.POST, instance=post)
