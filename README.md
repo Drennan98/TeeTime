@@ -225,6 +225,18 @@ and working my way down the priority list.
 
 - Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
+# Forking 🍴
+
+- Forking a repository on GitHub essentially means creating a copy of someone else's project repository. One benefit of this would be that you can make changes to the project without affecting the original repo. To fork a repo, **please follow the below steps:**
+
+1. On GitHub, navigate to the GitHub repository you would like to fork. 
+
+2. In the top right hand corner, you will see a fork button, click this to fork the desired repo. (note: you cannot fork your own repo's so this button will be greyed out on your own repo's).
+
+3. Once you hit the fork button, it will bring you to the **"Create a new fork screen"**. 
+
+4. You can then hit the green **"Create fork"** button. 
+
 # Bugs 
 
 - The "Email (optional):" heading still shows in the form even though I have set the input to hidden. At the time of writing this readme, I did not have time to fix this issue. 
