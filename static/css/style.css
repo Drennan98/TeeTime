@@ -14,6 +14,15 @@ body {
     text-align: center;
 }
 
+form p {
+    color: white;
+}
+
+nav div ul li {
+    color: blue;
+    font-weight: 900;
+}
+
 .btn {
     font-size: 1em;
 }
@@ -351,6 +360,10 @@ form, .golf-courselist-div, .signin-div, .signup-div {
     width: 25%;
 }
 
+#id_remember, p label {
+    color: white;
+}
+
 .delete-course, .delete-form {
     border: none;
     box-shadow: none;
@@ -374,9 +387,6 @@ form, .golf-courselist-div, .signin-div, .signup-div {
         color: black;
         opacity: 80%;
     }
-
-    
-
 }
 
 /* Media query: large or landscape phones (max 576px) */
@@ -427,5 +437,57 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 
     #signout-button {
         width: 60%;
+    }
+}
+
+/* Media query: Galaxy Fold (max 280px) */
+@media screen and (max-width: 280px) {
+    
+    li {
+        font-size: 0.4em;
+    }
+
+    .wide-buttons {
+        font-size: 0.6em;
+    }
+
+    .golf-course-list-button {
+        font-size: 0.5em;
+    }
+
+    #social-media li {
+        font-size: 0.8em;
+        padding: 20px;
+    }
+
+    .form-button, #id_login, #id_password, #id_name, #id_par, #id_location, #id_holes {
+        width: 80%;
+    }
+
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 30%;
+        color: black;
+        opacity: 70%;
+        margin-right: 60px;
+    }
+
+    .btn-large {
+        font-size: 0.7em;
+    }
+
+    .golf-course-list-button {
+        font-size: 0.55em;
+    }
+
+    .deletecourse-button, .back-to-courseform-button {
+        font-size: 1em;
+        width: 80%;
+    }
+
+    .course {
+        font-size: 2em;
     }
 }
