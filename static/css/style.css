@@ -54,6 +54,10 @@ p {
     padding: 20px 0;
 }
 
+form ul li {
+    color: white;
+}
+
 .wide-buttons {
     margin: 10px;
     width: 75%;
@@ -460,7 +464,7 @@ form, .golf-courselist-div, .signin-div, .signup-div {
         padding: 20px;
     }
 
-    .form-button, #id_login, #id_password, #id_name, #id_par, #id_location, #id_holes {
+    .form-button, #id_login, #id_password, #id_name, #id_par, #id_location, #id_holes, #id_username, #id_password1, #id_password2, .add-commentbutton {
         width: 80%;
     }
 
@@ -489,5 +493,20 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 
     .course {
         font-size: 2em;
+    }
+
+    form ul li {
+        padding-right: 20px;
+        line-height: 25px;
+    }
+
+    .save-post-button, .view-postlist-button {
+        font-size: 0.4em;
+        width: 75%;
+    }
+
+    .deletepost-button, .editpost-button, .viewpost-button {
+        width: 50%;
+        margin: 20px;
     }
 }
