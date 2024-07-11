@@ -77,10 +77,10 @@ def delete_comment(request, comment_id):
     post_id = comment.post.pk
     if request.user == comment.author:
         comment.delete()
-        message.success(request, "Comment successfully deleted.")
+        messages.success(request, "Comment successfully deleted.")
     else:
         messages.error(request, "You cannot delete this comment.")
-    return redirect('post_detail', pk=comment.post_id)
+    return redirect('post_detail', pk=post_id)
 
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
