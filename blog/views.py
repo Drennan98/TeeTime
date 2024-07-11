@@ -30,7 +30,7 @@ class UserProfileView(ListView):
     model = UserProfile
     template_name = "home/user_profile.html"
 
-class Comment(ListView):
+class CommentListView(ListView):
     model = Comment
     template_name = "home/post_detail.html"
 
@@ -72,16 +72,18 @@ def post_detail(request, pk):
     })
 
 @login_required
-def delete_comment(request, comment_id):
-    comment = get_object_or_404(Comment, id=comment_id)
-    post_id = comment.post.pk
-    if request.user == comment.author:
+def delete_comment(request, slug, comment_id):
+    queryset = Post.objects.filter(status=1)
+    comment = get_object_or_404(Comment, pk=comment_id)
+    post = get_object_or_404(queryset, slug=slug)
+    if comment.author == request.user:
         comment.delete()
+        response = redirect('post_detail')
         messages.success(request, "Comment successfully deleted.")
     else:
         messages.error(request, "You cannot delete this comment.")
-    return redirect('post_detail', pk=post_id)
-
+    return redirect('post_detail', pk=post.pk)
+    
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.user != post.author and not request.user.is_superuser:
