@@ -275,6 +275,10 @@ form {
     display: none;
 }
 
+.messages {
+    margin: 30px;
+}
+
 ul {
     list-style-type: none;
     color: #000000;
@@ -286,6 +290,10 @@ input, input {
 
 .deletepost-button {
     color: black;
+}
+
+#id_email + label {
+    display: none;
 }
 
 

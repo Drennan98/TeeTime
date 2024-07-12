@@ -3,11 +3,11 @@ from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Course, UserProfile, Comment
 from .forms import PostForm, CommentForm, EditForm
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
-from django.urls import reverse_lazy
+# from django.contrib.auth.models import User
+# from django.contrib.auth import authenticate, login
+#from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import DeleteView
+# from django.views.generic.edit import DeleteView
 
 # Create your views here.
 
@@ -72,15 +72,15 @@ def post_detail(request, pk):
     })
 
 @login_required
-def delete_comment(request, slug, comment_id):
-    comment = get_object_or_404(Comment, id=comment_id)
-    if comment.user == request.user:
+def delete_comment(request, post_id, comment_id):
+    comment = get_object_or_404(Comment, pk=comment_id)
+    if comment.author == request.user.username:
         comment.delete()
         messages.success(request, 'Comment successfully deleted.')
-        return redirect('post_detail', slug=slug)
+        return redirect('post_detail', pk=post_id)
     else:
         messages.error(request, 'You are not allowed delete this comment.')
-        return redirect('post_detail', slug=slug)
+        return redirect('post_detail', pk=post_id)
     
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
