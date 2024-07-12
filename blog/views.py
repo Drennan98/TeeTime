@@ -3,11 +3,7 @@ from django.views.generic import ListView, DetailView
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Course, UserProfile, Comment
 from .forms import PostForm, CommentForm, EditForm
-# from django.contrib.auth.models import User
-# from django.contrib.auth import authenticate, login
-#from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
-# from django.views.generic.edit import DeleteView
 
 # Create your views here.
 

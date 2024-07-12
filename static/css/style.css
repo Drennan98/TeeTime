@@ -296,6 +296,11 @@ input, input {
     display: none;
 }
 
+.helptext {
+    background-color: blue;
+    opacity: 80%;
+}
+
 
 /* Login form styles */
 
