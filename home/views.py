@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse, reverse_lazy
@@ -47,4 +48,5 @@ def delete_golfcourse(request, course_id):
     course = get_object_or_404(GolfCourse, id=course_id)
     if request.method == 'POST':
         course.delete()
+        messages.success(request, 'Golf course successfully deleted.')
         return redirect('golfcourse_list')
