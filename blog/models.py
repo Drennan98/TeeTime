@@ -29,6 +29,7 @@ class Post(models.Model):
 
 # This is my comment model. Users can comment on posts.
 class Comment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     author = models.CharField(max_length=80)
     body = models.TextField()

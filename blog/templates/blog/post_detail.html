@@ -19,7 +19,7 @@
                     <strong>{{ comment.author }}</strong> on {{ comment.created_on }}<br>
                     {{ comment.body }}
                     {% if request.user == comment.author or request.user.is_superuser %}
-                    <form method="post" action="{% url 'delete_comment' slug=post.slug comment_id=comment.id %}" class="delete-comment">
+                    <form method="post" action="{% url 'delete_comment' post.slug comment.id %}" class="delete-comment">
                         {% csrf_token %}
                         <button type="submit" class="deletecomment-button">Delete Comment</button>
                     </form>

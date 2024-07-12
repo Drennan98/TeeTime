@@ -65,6 +65,15 @@
             <p><a href="{% url 'account_signup' %}" class="btn btn-primary btn-large">Sign-up for our blog or sign-in here &raquo;</a></p>
         </div>
     {% endif %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {{ message }}
+                </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
     {% block content %}
     <!-- Welcome message with option to register -->
     <div class="buttons">

@@ -73,23 +73,23 @@ def post_detail(request, pk):
 
 @login_required
 def delete_comment(request, slug, comment_id):
-    queryset = Post.objects.filter(status=1)
-    comment = get_object_or_404(Comment, pk=comment_id)
-    post = get_object_or_404(queryset, slug=slug)
-    if comment.author == request.user:
+    comment = get_object_or_404(Comment, id=comment_id)
+    if comment.user == request.user:
         comment.delete()
-        response = redirect('post_detail')
-        messages.success(request, "Comment successfully deleted.")
+        messages.success(request, 'Comment successfully deleted.')
+        return redirect('post_detail', slug=slug)
     else:
-        messages.error(request, "You cannot delete this comment.")
-    return redirect('post_detail', pk=post.pk)
+        messages.error(request, 'You are not allowed delete this comment.')
+        return redirect('post_detail', slug=slug)
     
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.user != post.author and not request.user.is_superuser:
+        messages.error(request, 'You are not allowed delete this post.')
         return redirect('post_list', pk=post.pk)
     if request.method == 'POST':
         post.delete()
+        messages.success(request, 'Post succesfully deleted.')
         response = redirect('create_post')
         return response
     return render(request, 'blog/create_post.html', {'post': post})
@@ -111,5 +111,4 @@ def edit_post(request, pk):
             messages.error(request, "An error occurred.")
     else:
         form = EditForm(instance=post)
-
     return render(request, 'blog/edit_post.html', {'form': form, 'post': post})
