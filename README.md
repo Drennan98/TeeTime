@@ -242,7 +242,9 @@ and working my way down the priority list.
 | home      | golfcourse_list.html     | PASS   |
 | signup    | login.html               | PASS   |
 | signup    | logout.html              | PASS   |
-| signup    | signup.html              | *FAIL   |
+| signup    | signup.html              | FAIL   |
+
+**NOTE for assessor: The signup.html validation returned errors in the generated code by Django, I have no control over this therefore could not resolve it, I hope this is ok.**
 
 - JavaScript validation
 ![JavaScript Validation](static/images/jsvalidation.png)
