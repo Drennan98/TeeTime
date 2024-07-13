@@ -8,12 +8,21 @@ STATUS = (
     (1, "Publish")
 )
 
-# This is my blog post model. Users can share posts. 
+# This is my blog post model. Users can share posts.
+
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = AutoSlugField(populate_from='title', unique=True, always_update=True)
+    slug = AutoSlugField(
+        populate_from='title',
+        unique=True,
+        always_update=True
+    )
     content = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='golf_posts')
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        related_name='golf_posts'
+    )
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=1)
 
@@ -28,9 +37,15 @@ class Post(models.Model):
         ordering = ['-created_on']
 
 # This is my comment model. Users can comment on posts.
+
+
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
-    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post,
+        related_name="comments",
+        on_delete=models.CASCADE
+    )
     author = models.CharField(max_length=80)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
