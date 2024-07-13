@@ -54,7 +54,6 @@
                         <a class="nav-link active" href="{% url 'account_signup' %}">Register / Login</a>
                     </li>
                     {% endif %}
-                    </div>
                 </ul>
             </div>
         </div>    
@@ -78,9 +77,9 @@
     <!-- Welcome message with option to register -->
     <div class="buttons">
         <!-- Buttons which will take the user to different parts of the site -->
-        <button class="wide-buttons text-black"><a href="{% url 'create_post' %}">Click here to share a blog post and view other posts! &raquo;</button></a>
-        <button class="wide-buttons text-black"><a href="{% url 'golfcourse_list' %}">Click here to submit and view our favourite golf courses &raquo;</button></a>
-        <button class="wide-buttons text-black"><a href="{% url 'account_signup' %}">Click here to register for our golf blog &raquo;</button></a>
+        <a href="{% url 'create_post' %}" class="button-style">Click here to share a blog post and view other posts! &raquo;</a>
+        <a href="{% url 'golfcourse_list' %}" class="button-style">Click here to submit and view our favourite golf courses &raquo;</a>
+        <a href="{% url 'account_signup' %}" class="button-style">Click here to register for our golf blog &raquo;</a>
     </div>
     {% endblock %}
     <footer class="footer-main">
@@ -96,7 +95,7 @@
           <p id="copyright">Darragh Drennan &copy; 2024</p>
         </div>
     </footer>
-    <button id="scrollTopButton">Back to top<i class="fa-solid fa-angle-up" class="up-arrow"></i></button>
+    <button id="scrollTopButton">Back to top<i class="fa-solid fa-angle-up up-arrow"></i></button>
     <!-- JavaScript -->
     <script src="{% static 'js/script.js' %}">        
     </script>

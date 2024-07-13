@@ -158,6 +158,15 @@ h1 {
     font-size: 0.8em;
 }
 
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
 #form-heading {
     text-align: center;
     margin-bottom: 25px;
@@ -212,7 +221,7 @@ button {
     text-decoration: underline;
 }
 
-.form-button:hover, #signout-button:hover {
+.form-button:hover, #signout-button:hover, .button-style:hover {
     background-color: purple;
     transition: 0.4s;
 }
