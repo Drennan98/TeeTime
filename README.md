@@ -229,6 +229,21 @@ and working my way down the priority list.
 
 ## Validations 
 
+- HTML Validations
+| Directory | File                     | Result |
+| --------- | ------------------------ | ------ |
+| blog      | create_post.html         | PASS   |
+| blog      | edit_post.html           | PASS   |
+| blog      | post_detail.html         | PASS   |
+| blog      | post_list.html           | PASS   |
+| home      | golf_course_display.html | PASS   |
+| home      | golfcourse_detail.html   | PASS   |
+| home      | golfcourse_form.html     | PASS   |
+| home      | golfcourse_list.html     | PASS   |
+| signup    | login.html               | PASS   |
+| signup    | logout.html              | PASS   |
+| signup    | signup.html              | *FAIL   |
+
 - JavaScript validation
 ![JavaScript Validation](static/images/jsvalidation.png)
 
