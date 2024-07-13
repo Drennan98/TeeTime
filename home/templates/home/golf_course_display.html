@@ -4,7 +4,6 @@
 
 {% block content %}
 
-<body>
     <div class="golf-courselist-div">
         <h1>Golf Course List!</h1>
         <ul>
@@ -16,12 +15,11 @@
                 <form method="post" action="{% url 'delete_golfcourse' course.id %}" class="delete-course">
                     {% csrf_token %}
                     <button type="submit" class="deletecourse-button">Delete Course!</button>
-                    <button class="back-to-courseform-button"><a href="{% url 'golfcourse_list' %}">Back to course form!</a></button>
+                    <a href="{% url 'golfcourse_list' %}" class="button-style">Back to course form!</a>
                 </form>
             </li>
             {% endfor %}
         </ul>
     </div>
-</body>
 
 {% endblock %}

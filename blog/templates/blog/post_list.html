@@ -17,9 +17,9 @@
                         {% if request.user == post.author %}
                         <button type="submit" class="deletepost-button">Delete Post! &raquo;</button>
                         {% endif %}
-                        <button class="viewpost-button"><a href="{% url 'post_detail' post.id %}">View Post! &raquo;</a></button>
+                        <a href="{% url 'post_detail' post.id %}" class="button-style">View Post! &raquo;</a>
                         {% if request.user == post.author %}
-                        <button class="editpost-button"><a href="{% url 'edit_post' post.id %}">Edit Post! &raquo;</a></button>
+                        <a href="{% url 'edit_post' post.id %}" class="button-style">Edit Post! &raquo;</a>
                         {% endif %}
                     </form>
                 </div> 

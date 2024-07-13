@@ -17,6 +17,11 @@ body {
     text-align: center;
 }
 
+.custom-button {
+    background-color: grey;
+    border: 2px solid black;
+}
+
 form ul li {
     background-color: #3E5622;
     opacity: 80%;
@@ -77,7 +82,7 @@ a {
     text-decoration: none;
 }
 
-#golfball {
+.golfball {
     padding: 50px;
 }
 

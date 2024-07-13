@@ -229,6 +229,9 @@ and working my way down the priority list.
 
 ## Validations 
 
+- JavaScript validation
+![JavaScript Validation](static/images/jsvalidation.png)
+
 ## Lighthouse Testing (Desktop and Mobile)
 
 # Deployment
