@@ -141,6 +141,8 @@ and working my way down the priority list.
 
 ![Delete Course](static/images/deletecourse.png)
 
+![Sign In and reflects username](static/images/signin.png)
+
 # Design
 
  ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
