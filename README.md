@@ -135,6 +135,8 @@ and working my way down the priority list.
 
 ![SignOut Screen](static/images/signoutscreen.png)
 
+## Feedback messages to user upon user actions (i.e deleting a post)
+
 # Design
 
  ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**

@@ -17,9 +17,14 @@ body {
     text-align: center;
 }
 
-form p {
-    color: white;
+form ul li {
+    background-color: #3E5622;
+    opacity: 80%;
 }
+
+.helptext ul {
+    background-color: green;
+}    
 
 nav div ul li {
     color: blue;
@@ -158,6 +163,10 @@ h1 {
     margin-bottom: 25px;
 }
 
+form p label {
+    color: #F58F29;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -177,12 +186,6 @@ button {
     color: white;
     border-radius: 6px;
     font-size: 20px;
-}
-
-/* Search bar styles */
-
-.search-bar {
-    display: flex;
 }
 
 /* Post styles */
@@ -292,13 +295,10 @@ input, input {
     color: black;
 }
 
+/* Hides the email heading in the signup form */
+
 p:has(#id_email) {
     display: none;
-}
-
-.helptext {
-    background-color: blue;
-    opacity: 80%;
 }
 
 
