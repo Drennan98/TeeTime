@@ -229,6 +229,8 @@ and working my way down the priority list.
 
 ## Validations 
 
+- [base.html](https://validator.w3.org/nu/#textarea)
+
 ## Lighthouse Testing (Desktop and Mobile)
 
 # Deployment
