@@ -29,11 +29,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.gitpod.io', 
-                 'localhost', 
+ALLOWED_HOSTS = ['.gitpod.io',
+                 'localhost',
                  'localhost:8000',
-                 'localhost:3000', 
-                 '.herokuapp.com', 
+                 'localhost:3000',
+                 '.herokuapp.com',
                  'https://teetime0000-43f1c39ce1c8.herokuapp.com/',
                  '8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net',
                  ]
@@ -106,7 +106,8 @@ WSGI_APPLICATION = 'tee_time.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 if "DATABASE_URL" in os.environ:
-    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+    DATABASES = {
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 else:
     DATABASES = {
         "default": {
@@ -120,16 +121,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+            'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
@@ -153,15 +158,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL ='/media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net',
-'https://teetime0000-43f1c39ce1c8.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-drennan98-teetime-hxspcim29s7.ws.codeinstitute-ide.net',
+    'https://teetime0000-43f1c39ce1c8.herokuapp.com/'
+]

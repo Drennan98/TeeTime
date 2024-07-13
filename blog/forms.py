@@ -2,7 +2,9 @@ from allauth.account.forms import SignupForm
 from django import forms
 from .models import Post, Comment
 
-# Signup form using allauth 
+# Signup form using allauth
+
+
 class CustomSignupForm(SignupForm):
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
@@ -14,17 +16,21 @@ class CustomSignupForm(SignupForm):
         user.save()
         return user
 
+
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content']
+
 
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['body']
 
+
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content']
+        

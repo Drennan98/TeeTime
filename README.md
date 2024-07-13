@@ -249,6 +249,12 @@ and working my way down the priority list.
 - JavaScript validation
 ![JavaScript Validation](static/images/jsvalidation.png)
 
+- CSS Validation 
+Directory	File	Result
+static/css	style.css	PASS 
+
+PEP8 Validation
+
 ## Lighthouse Testing (Desktop and Mobile)
 
 # Deployment

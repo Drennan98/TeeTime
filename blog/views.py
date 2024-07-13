@@ -7,28 +7,35 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-# Class based views for mapping 
+# Class based views for mapping
+
+
 class PostList(ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "home/index.html"
     paginate_by = 5
+
 
 class PostDetail(DetailView):
     model = Post
     template_name = "home/post_detail.html"
     context_object_name = "post"
 
+
 class Course(ListView):
     model = Course
     template_name = "home/course.html"
+
 
 class UserProfileView(ListView):
     model = UserProfile
     template_name = "home/user_profile.html"
 
+
 class CommentListView(ListView):
     model = Comment
     template_name = "home/post_detail.html"
+
 
 @login_required
 def create_post(request):
@@ -45,6 +52,7 @@ def create_post(request):
     else:
         form = PostForm()
         return render(request, 'blog/create_post.html', {'form': form})
+
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -67,6 +75,7 @@ def post_detail(request, pk):
         'comment_form': comment_form
     })
 
+
 @login_required
 def delete_comment(request, post_id, comment_id):
     comment = get_object_or_404(Comment, pk=comment_id)
@@ -77,7 +86,8 @@ def delete_comment(request, post_id, comment_id):
     else:
         messages.error(request, 'You are not allowed delete this comment.')
         return redirect('post_detail', pk=post_id)
-    
+
+
 def delete_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.user != post.author and not request.user.is_superuser:
@@ -89,6 +99,7 @@ def delete_post(request, pk):
         response = redirect('create_post')
         return response
     return render(request, 'blog/create_post.html', {'post': post})
+
 
 def edit_post(request, pk):
     post = get_object_or_404(Post, pk=pk)
