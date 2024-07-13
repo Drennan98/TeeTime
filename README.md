@@ -137,6 +137,10 @@ and working my way down the priority list.
 
 ## Feedback messages to user upon user actions (i.e deleting a post)
 
+- I have implemented feedback messages to the user when they perform certain actions. This reminds me the user of an action they have performed. **See below:**
+
+![Delete Course](static/images/deletecourse.png)
+
 # Design
 
  ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
