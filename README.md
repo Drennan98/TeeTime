@@ -143,6 +143,14 @@ and working my way down the priority list.
 
 ![Sign In and reflects username](static/images/signin.png)
 
+![Post Created](static/images/postcreated.png)
+
+![Comment Deleted](static/images/commentdeleted.png)
+
+![Post Deleted](static/images/postdeleted.png)
+
+![Signed Out](static/images/signedout.png)
+
 # Design
 
  ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
