@@ -1,17 +1,14 @@
 {% extends "base.html" %}
-
 {% load static %}
-
 {% block content %}
 <!-- Post structure HTML -->
-<body>
     <div class="masthead">
         <div class="container">
             <div>
                 <h1 class="post-title">{{ post.title }}</h1>
                 <p>{{ post.content }}</p>
                 <p><small>By {{ post.author }} on {{ post.created_on }}</small></p>
-                <button class="post-returnhome-button"><a href="{% url 'home' %}">Return to home page</a></button>
+                <a href="{% url 'home' %}" class="button-style">Return to home page</a>
             </div>
             <ul>
                 {% for comment in comments %}
@@ -34,10 +31,9 @@
                 {% csrf_token %}
                 {{ comment_form.as_p }}
                 <button class="add-commentbutton" type="submit">Add Comment</button>
-                <button type="submit" class="view-postlist-button"><a href="{% url 'blog' %}">View posts here!</a></button>
+                <a href="{% url 'blog' %}" class="button-style">View posts here!</a>
             </form>
             {% endif %}
         </div>
     </div>
-</body>
 {% endblock %}

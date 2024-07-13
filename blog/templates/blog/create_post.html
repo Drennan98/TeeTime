@@ -9,7 +9,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="save-post-button">Save</button>
-    <button type="submit" class="view-postlist-button"><a href="{% url 'blog' %}">View posts here!</a></button>
+    <a href="{% url 'blog' %}" class="button-style">View posts here! &raquo;</a>
 </form>
 
 {% endblock %}
