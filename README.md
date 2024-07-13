@@ -229,6 +229,7 @@ and working my way down the priority list.
 
 ## Validations 
 
+### base.html 
 - ![base.html](static/images/basehtmlvalidation.png)
 
 ## Lighthouse Testing (Desktop and Mobile)

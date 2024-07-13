@@ -10,7 +10,7 @@
             <li><a href="{% url 'golfcourse_detail' course.pk %}">{{ course.name }}</a></li>
             {% endfor %}
         </ul>
-        <button class="golf-course-list-button"><a href="{% url 'golfcourse_create' %}">Add a new golf course &raquo;</a></button>
-        <button class="golf-course-list-button"><a href="{% url 'golf-courses' %}">View list of golf courses! &raquo;</a></button>
+        <a href="{% url 'golfcourse_create' %}" class="button-style">Add a new golf course &raquo;</a>
+        <a href="{% url 'golf-courses' %}" class="button-style">View list of golf courses! &raquo;</a>
 </div>
     {% endblock %}
