@@ -153,6 +153,12 @@ and working my way down the priority list.
 
 ![Signed Out](static/images/signedout.png)
 
+## Back to top button 
+
+- I used some basic JavaScript to create a back to top button which users can click to easily navigate back to the top of the webpage.
+
+![Back to top](static/images/backtotop.png)
+
 # Design
 
  ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
@@ -422,6 +428,6 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 - The Slack community. 
 
-## Notes for assessor 
+## Notes for assessor 
 
 - There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching.
