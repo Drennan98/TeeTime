@@ -2,7 +2,7 @@
 
 ![Responsive image here](static/images/responsiveness.png)
 
-You can find the link to the deployed site here, [TeeTime](https://teetime0000-43f1c39ce1c8.herokuapp.com/)
+You can find the link to the deployed site here, [TeeTime](https://teetime0000-43f1c39ce1c8.herokuapp.com/).
 
 # Project Purpose
 
@@ -294,6 +294,40 @@ Directory	File	Result
 static/css	style.css	PASS 
 
 - Python Validations
+
+Directory 	File 	Result
+blog	__init__.py	PASS
+blog	admin.py	PASS 
+blog	apps.py	    PASS 
+blog	forms.py	PASS 
+blog	models.py	PASS
+blog	urls.py	    PASS 
+blog	views.py	PASS
+		
+		
+home	__init__.py	PASS
+home	admin.py	PASS
+home	apps.py	    PASS
+home	forms.py	PASS
+home	models.py	PASS
+home	urls.py	    PASS
+home	views.py	PASS
+		
+		
+signup	__init__.py	PASS
+signup	admin.py	PASS
+signup	apps.py	    PASS
+signup	forms.py	PASS
+signup	models.py	PASS
+signup	urls.py	    PASS
+signup	views.py	PASS
+		
+		
+tee_time	__init__.py	PASS
+tee_time	asgi.py	    PASS
+tee_time	settings.py	PASS
+tee_time	urls.py	    PASS
+tee_time	wsgi.py	    PASS
 
 ## Lighthouse Testing (Desktop and Mobile)
 
