@@ -77,7 +77,9 @@
         <!-- Buttons which will take the user to different parts of the site -->
         <a href="{% url 'create_post' %}" class="button-style">Click here to share a blog post and view other posts! &raquo;</a>
         <a href="{% url 'golfcourse_list' %}" class="button-style">Click here to submit and view our favourite golf courses &raquo;</a>
+    {% if not user.is_authenticated %}
         <a href="{% url 'account_signup' %}" class="button-style">Click here to register for our golf blog &raquo;</a>
+    {% endif %}
     </div>
     {% endblock %}
     <footer class="footer-main">
