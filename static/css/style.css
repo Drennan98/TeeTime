@@ -13,15 +13,6 @@ body {
     padding: 0;
 }
 
-#hero-heading {
-    text-align: center;
-}
-
-.custom-button {
-    background-color: grey;
-    border: 2px solid black;
-}
-
 form ul li {
     background-color: #3E5622;
     opacity: 80%;
@@ -69,11 +60,6 @@ p {
 
 form ul li {
     color: white;
-}
-
-.wide-buttons {
-    margin: 10px;
-    width: 75%;
 }
 
 a {
@@ -124,10 +110,6 @@ h1 {
     box-shadow: 10px 10px;
 }
 
-#signin {
-    padding-left: 5px;
-}
-
 .submit-course {
     padding-top: 50px;
 }
@@ -164,15 +146,6 @@ h1 {
     font-size: 0.8em;
 }
 
-.button-style {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    border: none;
-}
-
 #form-heading {
     text-align: center;
     margin-bottom: 25px;
@@ -195,49 +168,25 @@ input {
     border-radius: 6px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
+.button-style, button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
-    border-radius: 6px;
-    font-size: 20px;
-}
-
-/* Post styles */
-
-.post-list {
-    padding: 20px;
-}
-
-.post {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.post h2 {
-    margin-top: 0;
+    text-align: center;
+    border: none;
 }
 
 /* Hover pseudo classes */
 
-.signin-span:hover, .golf-course-list-button:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .wide-buttons:hover, .nav-item:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .view-postlist-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover, .deletecourse-button:hover, .deletepost-button:hover, .editpost-button:hover, .deletecomment-button:hover {
-    text-decoration: underline;
-}
-
-.form-button:hover, #signout-button:hover, .button-style:hover {
+.signin-span:hover, .signup-span:hover, .form-button:hover, #save-golfcourse-button:hover, #cancel-golfcourse-button:hover, .submit-golfcourse-button:hover, .back-to-courseform-button:hover, #signout-button:hover, #signin:hover, .save-post-button:hover, .viewpost-button:hover, .post-returnhome-button:hover, .comment-button:hover, .add-commentbutton:hover, .deletecourse-button:hover, .deletepost-button:hover, .deletecomment-button:hover, .form-button:hover, #signout-button:hover, .button-style:hover {
     background-color: purple;
     transition: 0.4s;
 }
 
-.deletepost-button {
-    color: black;
-    width: 25%;
-    font-size: 1em;
+.nav-item:hover {
+    color: red;
 }
-
 
 /* Hero unit styles */
 
@@ -248,11 +197,6 @@ button {
     font-weight: 400;
     margin: 20px;
     border: 10px ridge black;
-    box-shadow: 10px 10px;
-}
-
-
-.header-div {
     box-shadow: 10px 10px;
 }
 
@@ -279,12 +223,6 @@ form {
     border-style: groove;
 }
 
-#signup-button, .save-post-button, .view-postlist-button  {
-    width: 15%;
-    color: black;
-    margin-bottom: 20px;
-}
-
 #id_password1, #id_password2, #id_username, #id_email, #id_title, #id_content {
     width: 25%;
 }
@@ -304,10 +242,6 @@ ul {
 
 input, input {
     font-size: 80%;
-}
-
-.deletepost-button {
-    color: black;
 }
 
 /* Hides the email heading in the signup form */
@@ -330,12 +264,6 @@ p:has(#id_email) {
     font-size: 90%;
 }
 
-.form-button {
-    width: 15%;
-    color: black;
-    margin-bottom: 20px;
-}
-
 /* Post styles */ 
 
 .masthead {
@@ -347,12 +275,6 @@ p:has(#id_email) {
 
 #id_name, #id_location, #id_par, #id_holes {
     width: 25%;
-}
-
-#save-golfcourse-button, #cancel-golfcourse-button, #signout-button, .post-returnhome-button {
-    width: 10%;
-    color: black;
-    margin-bottom: 20px;
 }
 
 /* Scroll back to top button */
@@ -368,12 +290,6 @@ p:has(#id_email) {
 
 .up-arrow {
     padding-left: 20px;
-}
-
-.golf-course-list-button, .back-to-courseform-button, .post-returnhome-button, .add-commentbutton, .viewpost-button, .view-postlist-button, .editpost-button, .save-post-button, .deletecourse-button, .deletecomment-button {
-    width: 25%;
-    color: black;
-    font-size: 1em;
 }
 
 form, .golf-courselist-div, .signin-div, .signup-div {

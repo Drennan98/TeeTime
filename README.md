@@ -331,6 +331,43 @@ tee_time	wsgi.py	    PASS
 
 ## Lighthouse Testing (Desktop and Mobile)
 
+Lighthouse testing is used to analyse a number of different things about a webpage. These can include performance, accessibility, best practices, SEO and Progressive Web App (PWA).
+
+**Here is a breif breakdown of what each audit category assesses:**
+
+1. Performance
+    - Measures a pages loading times.
+    - Some metrics include Total Blocking Time and Speed Index.
+    - Improvements will be suggested.
+
+2. Accessibility 
+    - This will check how accessible the web page is to someone with disabilities.
+    - Evaluates aspects like the use of semantic HTML. 
+    - Improvements will be suggested. 
+
+3. Best Practices
+    - Ensures the web page uses modern web development practices. 
+    - This will include checks for the correct use of API's.
+    - Indicates where the webpage might be using practices which could be considered deprecated. 
+
+4. Search Engine Optimization (SEO)
+    - Assess optimization by search engines.
+    - Meta tags and valid HTML are just examples of what is analysed here.
+    - Provides better visibility in search results. 
+
+5. Progressive Web App (PWA)
+    - Checks to see if the webpage meets PWA standards. 
+    - Checks for criteria that make the page offline-capable. 
+    - Helps with user experience. 
+
+To perform a Lighthouse audit, **please follow these steps:**
+
+1. Inspect your page with Dev Tools. (Right click anywhere on the page and click "Inspect").
+
+2. In the top right hand panel, you will see a list of options, starting with "Elements" and ending with "Application". Click the ">>" button beside "Application" which will show a menu of other options, including Lighthouse. Click on Lighthouse. 
+
+3. Click "Analyze page load". 
+
 # Deployment
 
 ### The deployment process is done on a platform called Heroku. The deployment process is lengthy but is as follows:
@@ -387,4 +424,4 @@ tee_time	wsgi.py	    PASS
 
 ## Notes for assessor 
 
-- There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching. 
+- There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching.
