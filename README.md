@@ -187,13 +187,53 @@ and working my way down the priority list.
 
 - [Coolors](https://coolors.co/).
 
-- Django Aullauth was used for handling the forms and allowing users to register and sign in. 
+- [Table to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/).
+
+- Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
 ## Planning
 
 ## Typography 
 
+- The project portrays the "Oswald" font. I like the simplicity of this one but it also gives the site a more personalised feel. I wanted this to be applied to all so used the "*" selector. You can find this between lines 3-5 in "static/css/style.css". **See steps below to import a font of your choice:**
+
+1. Go to [Google Fonts](https://fonts.google.com/).
+
+2. Scroll through the fonts and select whichever one you like. 
+
+3. Click on the font. 
+
+4. Click "get font" in the top right hand corner. It should be a blue button.
+
+5. Click "get embed code" on the right handside. This is also a blue button. 
+
+6. Embed this code in the head of your HTML file. 
+
 ## Color Palette
+
+The main colors I went with for this project are as follows:
+
+1. Grey
+
+2. Black
+
+3. #3E5622
+
+4. Green
+
+5. Blue
+
+6. #30C5FF
+
+7. White
+
+8. Aqua
+
+9. #007bff
+
+10. #F58F29
+
+11. purple (hover pseudo class)
 
 ## Wireframes (include different screen sizes)
 
@@ -246,14 +286,14 @@ and working my way down the priority list.
 
 **NOTE for assessor: The signup.html validation returned errors in the generated code by Django, I have no control over this therefore could not resolve it, I hope this is ok.**
 
-- JavaScript validation
+- JavaScript validations
 ![JavaScript Validation](static/images/jsvalidation.png)
 
-- CSS Validation 
+- CSS Validationss
 Directory	File	Result
 static/css	style.css	PASS 
 
-PEP8 Validation
+- Python Validations
 
 ## Lighthouse Testing (Desktop and Mobile)
 
