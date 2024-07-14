@@ -2,6 +2,8 @@
 
 ![Responsive image here](static/images/responsiveness.png)
 
+You can find the link to the deployed site here, [TeeTime](https://teetime0000-43f1c39ce1c8.herokuapp.com/)
+
 # Project Purpose
 
 This is the 4th project for the diploma in Full Stack Software Development with Code Institute. TeeTime is a blog where users can interact with eachother, compare favourite golf courses and chat about all things golf. The website will offer users the ability to create, edit delete posts. They will also be able to comment on eachother posts. Think of it as Instagram or Facebook but for golfers. This is a full stack website which incorporates the Django framework. One my main goals is to get people into the game of golf so once users have engaged with content on the site.
