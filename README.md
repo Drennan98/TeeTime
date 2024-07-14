@@ -28,7 +28,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Create an easy to navigate, user friendly site. 
 
-## Target Audience 
+## Target Audience
 
 - People who might be looking to take the game of golf up. 
 
@@ -36,9 +36,9 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Golfers looking for other people to play with.
 
-# Agile Methodology 
+# Agile Methodology
 
-## Epics 
+## Epics
 
 - Fully functioning site.
 
@@ -52,7 +52,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Database setup. 
 
-## User Stories 
+## User Stories
 
 1. Create a convenient, easy-to-navigate interface.
 
@@ -74,7 +74,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 10. Background story of creator. 
 
-## Kanban Board 
+## Kanban Board
 
 - I mapped my User Stories onto my Kanban Board on GitHub. I found it very useful for project management and it was easy to identify which features were in the backlog, which features were in progress and which features were ready. My Kanban Board is public and can be viewed in the repository on GitHub but I will attach a screenshot here. 
 
@@ -97,7 +97,7 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 - I found that it was an efficient of managing my time and putting my time into the most important part of my project while implementing the most important features first
 and working my way down the priority list. 
 
-# Features 
+# Features
 
 ## Landing Page
 
@@ -111,7 +111,7 @@ and working my way down the priority list.
 
 ![NavBar](static/images/navbar.png)
 
-## Login Status 
+## Login Status
 
 - This very simple feature reflects the users login status to them. It's just so the user knows that they're logged in. The user will know they're logged in when it says **Logout** at the bottom of the navbar. 
 
@@ -123,7 +123,7 @@ and working my way down the priority list.
 
 ![CRUD Example](static/images/crudexample.png)
 
-## Register / Sign In / Sign Out 
+## Register / Sign In / Sign Out
 
 - This is the part of the application where the user can register or log into the site. The user will **NOT** be allowed to create and share posts unless they're logged in. The user picks a username, a password and then confirms the password by typing it again. (Note: you might be wondering why you see "Email (optional):" and this is because I changed the account authentication method in settings.py throughout the project and hid the input for email. However, at the time of writing this README, I didn't figure out how to hide the heading for this input, I just figured it was easier to pick a username instead of an email and username). There will be instructions in this form for deciding on a strong password. Just above the sign up form you will see a turquoise box which will enable the user to **sign in** should they already have an acccount. 
 
@@ -153,7 +153,7 @@ and working my way down the priority list.
 
 ![Signed Out](static/images/signedout.png)
 
-## Back to top button 
+## Back to top button
 
 - I used some basic JavaScript to create a back to top button which users can click to easily navigate back to the top of the webpage.
 
@@ -171,7 +171,7 @@ and working my way down the priority list.
 
 - All buttons are underline upon hovering on them. This is so users know that they're hovering over a button. 
 
-## Technologies Used 
+## Technologies Used
 
 - HMTL, CSS, JavaScript, Python and Django.
 
@@ -201,7 +201,7 @@ and working my way down the priority list.
 
 ## Planning
 
-## Typography 
+## Typography
 
 - The project portrays the "Oswald" font. I like the simplicity of this one but it also gives the site a more personalised feel. I wanted this to be applied to all so used the "*" selector. You can find this between lines 3-5 in "static/css/style.css". **See steps below to import a font of your choice:**
 
@@ -259,21 +259,21 @@ The main colors I went with for this project are as follows:
 
 ![Signup Form](static/images/signupformwireframe.png)
 
-## iPad Landing Page Wireframe 
+## iPad Landing Page Wireframe
 
 ![iPad Landing Page](static/images/ipadlandingpagewireframe.png)
 
-## iPhone Landing Page Wireframe 
+## iPhone Landing Page Wireframe
 
 ![iPhone Landing Page](static/images/iphonelandingpagewireframe.png)
 
-# Testing 
+# Testing
 
-## Browser Compatibility 
+## Browser Compatibility
 
 - The site works as intended on Google Chrome and Safari. No issuses were reported. 
 
-## Validations 
+## Validations
 
 - HTML Validations
 | Directory | File                     | Result |
@@ -388,7 +388,7 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 - Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
-# Forking 
+# Forking
 
 - Forking a repository on GitHub essentially means creating a copy of someone else's project repository. One benefit of this would be that you can make changes to the project without affecting the original repo. To fork a repo, **please follow the below steps:**
 
@@ -400,7 +400,7 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 4. You can then hit the green **"Create fork"** button. 
 
-# Cloning 
+# Cloning
 
 - Cloning a repo means copying the entire project repository to your machine. To clone a repo, **please follow the below steps:**
 
@@ -416,7 +416,7 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 6. Finally, hit Enter. 
 
-# Bugs 
+# Bugs
 
 - The "Email (optional):" heading still shows in the form even though I have set the input to hidden. At the time of writing this readme, I did not have time to fix this issue. 
 
@@ -428,6 +428,6 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 - The Slack community. 
 
-## Notes for assessor 
+## Notes for assessor
 
 - There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching.
