@@ -259,8 +259,6 @@ The main colors I went with for this project are as follows:
 
 ![iPhone Landing Page](static/images/iphonelandingpagewireframe.png)
 
-## Layout
-
 # Testing 
 
 ## Browser Compatibility 
@@ -350,3 +348,7 @@ static/css	style.css	PASS
 - Tomas, for his patience and advice for this project. 
 
 - The Slack community. 
+
+## Notes for assessor 
+
+- There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching. 

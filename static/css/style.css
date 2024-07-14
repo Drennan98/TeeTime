@@ -57,7 +57,7 @@ nav {
     border: 10px ridge black;
     margin: 20px;
     background-image: url(../images/nav-background.jpg);
-    background-size: 100%;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 10px 10px;
@@ -80,6 +80,7 @@ a {
     text-align: center;
     color: black;
     text-decoration: none;
+    margin: 20px;
 }
 
 .golfball {
@@ -488,6 +489,11 @@ form, .golf-courselist-div, .signin-div, .signup-div {
         font-size: 0.4em;
     }
 
+    a {
+        margin: 10px;
+        font-size: 0.65em;
+    }
+
     .wide-buttons {
         font-size: 0.6em;
     }
@@ -523,7 +529,7 @@ form, .golf-courselist-div, .signin-div, .signup-div {
         font-size: 0.55em;
     }
 
-    .deletecourse-button, .back-to-courseform-button {
+    .deletecourse-button, .back-to-courseform-button, .deletecomment-button {
         font-size: 1em;
         width: 80%;
     }
