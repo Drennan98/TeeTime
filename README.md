@@ -199,8 +199,6 @@ and working my way down the priority list.
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
-## Planning
-
 ## Typography
 
 - The project portrays the "Oswald" font. I like the simplicity of this one but it also gives the site a more personalised feel. I wanted this to be applied to all so used the "*" selector. You can find this between lines 3-5 in "static/css/style.css". **See steps below to import a font of your choice:**
@@ -269,6 +267,68 @@ The main colors I went with for this project are as follows:
 
 # Testing
 
+## User Story Testing
+
+### User Story 1 - Create a convenient, easy-to-navigate interface
+    - Description: Create an application is intuitive and user friendly.
+    - Steps:
+        1. Navigate the site freely, all buttons and links are displayed clearly.
+        2. Hover pseudo classes are applied for accessibility.
+
+### User Story 2 - Create, Edit and Delete Functions
+    - Description: Give the user the ability Create, Edit and Delete items.
+    - Steps:
+        1. Log in or register if you haven't already registered.
+        2. Create a post. 
+        3. Click "View posts here!".
+        4. The user will see 3 options, "Delete Post!", "View Post!" and "Edit Post!".
+    - Expected Results: The user can Create, Edit and Delete items which was essential functionality for this project. 
+
+### User Story 3 - View the dates a blog post was created
+    - Description: Show the date a post was created on TeeTime. 
+    - Steps:
+        1. Create a post.
+        2. Click "View posts here!".
+        3. View the date a post was created. 
+    - Expected Results: The user can see the date a post was created. 
+
+### User Story 4 - Different golf courses
+    - Description: Create a feature where the users could see list of golf courses submitted to allow comparisons. 
+    - Steps:
+        1. Click "Golf Courses" in the navbar. 
+        2. Click "add a new golf course".
+        3. Click "View list of golf courses!".
+        4. The user will have the option to delete a course also.
+    - Expected Results: View list of submitted golf courses. 
+
+### User Story 5 - Commenting other peoples posts (Future feature)
+    - Description: The ability to comment on other users posts. 
+    - Steps:
+        1. Click "Golf News" or log in and create a post.
+        2. Click "View post!" to view the post.
+        3. You will see an option to add a comment.  
+    - Expected Results: Users can comment on eachothers posts, the comment will show the date of creation and the user who created it. 
+
+### User Story 6 - Signing up for golf newsletter (Will not be implemented at this time)
+    - Description: Sign up for a golf newsletter with the latest news from the golf world.  
+
+### User Story 7 - Course ratings (Will not be implmented at this time)
+    - Description: Add the ability to rate courses which were submitted by users. 
+
+### User Story 8 - Defensive programming
+    - Description: When signing out, the user is asked "Are you sure you want to sign out?" 
+    - Steps:
+        1. Login or Register using the links provided. 
+        2. Click "Logout"
+        3. You will see the message "Are you sure you want to sign out?"
+    - Expected Results: The user can click "sign out" if they wish. But, this feature is implemented so if they hit "Logout" by accident, they are reminded that they have done so. 
+
+### User Story 9 - Search functions (Will not be implemented at this stage)
+    - Description: The ability to search posts created. 
+
+### User Story 10 - Background story of creator (Will not be implemented at this time)
+    - Description: Page showcasing the idea behind TeeTime and the background of the creator. 
+
 ## Browser Compatibility
 
 - The site works as intended on Google Chrome and Safari. No issuses were reported. 
@@ -276,6 +336,7 @@ The main colors I went with for this project are as follows:
 ## Validations
 
 - HTML Validations
+
 | Directory  | File                    | Result |
 |------------|-------------------------|--------|
 | blog       | create_post.html        | PASS   |
@@ -288,14 +349,16 @@ The main colors I went with for this project are as follows:
 | home       | golfcourse_list.html    | PASS   |
 | signup     | login.html              | PASS   |
 | signup     | logout.html             | PASS   |
-| signup     | signup.html             | PASS   |
+| signup     | signup.html             | ***    |
 
 **NOTE for assessor: The signup.html validation returned errors in the generated code by Django, I have no control over this therefore could not resolve it, I hope this is ok.**
 
 - JavaScript validations
+
 ![JavaScript Validation](static/images/jsvalidation.png)
 
 - CSS Validationss
+
 Directory	File	Result
 static/css	style.css	PASS 
 
@@ -434,3 +497,4 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 ## Notes for assessor
 
+- Could not get the tables to load properly in markdown. Tried using Table to Markdown and generating my table and pasting the result here but it wouldn't work. 
