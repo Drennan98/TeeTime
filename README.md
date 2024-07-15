@@ -270,13 +270,13 @@ The main colors I went with for this project are as follows:
 ## User Story Testing
 
 ### User Story 1 - Create a convenient, easy-to-navigate interface
-    - Description: Create an application is intuitive and user friendly.
+- Description: Create an application is intuitive and user friendly.
     - Steps:
         1. Navigate the site freely, all buttons and links are displayed clearly.
         2. Hover pseudo classes are applied for accessibility.
 
 ### User Story 2 - Create, Edit and Delete Functions
-    - Description: Give the user the ability Create, Edit and Delete items.
+- Description: Give the user the ability Create, Edit and Delete items.
     - Steps:
         1. Log in or register if you haven't already registered.
         2. Create a post. 
@@ -285,7 +285,7 @@ The main colors I went with for this project are as follows:
     - Expected Results: The user can Create, Edit and Delete items which was essential functionality for this project. 
 
 ### User Story 3 - View the dates a blog post was created
-    - Description: Show the date a post was created on TeeTime. 
+- Description: Show the date a post was created on TeeTime. 
     - Steps:
         1. Create a post.
         2. Click "View posts here!".
@@ -293,7 +293,7 @@ The main colors I went with for this project are as follows:
     - Expected Results: The user can see the date a post was created. 
 
 ### User Story 4 - Different golf courses
-    - Description: Create a feature where the users could see list of golf courses submitted to allow comparisons. 
+- Description: Create a feature where the users could see list of golf courses submitted to allow comparisons. 
     - Steps:
         1. Click "Golf Courses" in the navbar. 
         2. Click "add a new golf course".
@@ -302,7 +302,7 @@ The main colors I went with for this project are as follows:
     - Expected Results: View list of submitted golf courses. 
 
 ### User Story 5 - Commenting other peoples posts (Future feature)
-    - Description: The ability to comment on other users posts. 
+- Description: The ability to comment on other users posts. 
     - Steps:
         1. Click "Golf News" or log in and create a post.
         2. Click "View post!" to view the post.
@@ -312,11 +312,11 @@ The main colors I went with for this project are as follows:
 ### User Story 6 - Signing up for golf newsletter (Will not be implemented at this time)
     - Description: Sign up for a golf newsletter with the latest news from the golf world.  
 
-### User Story 7 - Course ratings (Will not be implmented at this time)
+### User Story 7 - Course ratings (Will not be implemented at this time)
     - Description: Add the ability to rate courses which were submitted by users. 
 
 ### User Story 8 - Defensive programming
-    - Description: When signing out, the user is asked "Are you sure you want to sign out?" 
+- Description: When signing out, the user is asked "Are you sure you want to sign out?" 
     - Steps:
         1. Login or Register using the links provided. 
         2. Click "Logout"
