@@ -362,7 +362,10 @@ The main colors I went with for this project are as follows:
 - CSS Validationss
 
 Directory	File	Result
-static/css	style.css	PASS 
+
+|   Directory   	|   File       	|   Result  	|
+|---------------	|--------------	|-----------	|
+|   static/css  	|   style.css  	|   PASS    	|
 
 - Python Validations
 
@@ -402,7 +405,7 @@ static/css	style.css	PASS
 
 Lighthouse testing is used to analyse a number of different things about a webpage. These can include performance, accessibility, best practices, SEO and Progressive Web App (PWA).
 
-**Here is a breif breakdown of what each audit category assesses:**
+**Here is a brief breakdown of what each audit category assesses:**
 
 1. Performance
     - Measures a pages loading times.
@@ -497,4 +500,4 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 ## Notes for assessor
 
-- Could not get the tables to load properly in markdown. Tried using Table to Markdown and generating my table and pasting the result here but it wouldn't work. 
+- 
