@@ -335,6 +335,8 @@ The main colors I went with for this project are as follows:
 
 ## Validations
 
+## Validations
+
 - HTML Validations
 
 | Directory  | File                    | Result |
