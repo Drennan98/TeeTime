@@ -163,7 +163,7 @@ input {
     border-radius: 6px;
 }
 
-.button-style, button {
+.button-style, button, .deletecourse-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -298,19 +298,8 @@ form, .golf-courselist-div, .signin-div, .signup-div {
     font-size: 1em;
 }
 
-.comment-button {
-    width: 25%;
-    color: black;
-    padding-bottom: 30px;
-}
-
 .comment-form {
     box-shadow: none;
-}
-
-.deletecourse-button {
-    color: black;
-    width: 25%;
 }
 
 #id_remember, p label {
