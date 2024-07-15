@@ -386,7 +386,7 @@ form, .golf-courselist-div, .signin-div, .signup-div {
 @media screen and (max-width: 280px) {
     
     li {
-        font-size: 0.4em;
+        font-size: 0.7em;
     }
 
     a {
@@ -444,7 +444,7 @@ form, .golf-courselist-div, .signin-div, .signup-div {
     }
 
     .save-post-button, .view-postlist-button {
-        font-size: 0.4em;
+        font-size: 0.5em;
         width: 75%;
     }
 

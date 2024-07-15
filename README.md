@@ -374,6 +374,10 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 3. Click "Analyze page load". 
 
+- **Here is an example of a Lighthouse audit in my project:**
+
+![Lighthouse](static/images/lighthouseexample.png)
+
 # Deployment
 
 ### The deployment process is done on a platform called Heroku. The deployment process is lengthy but is as follows:
@@ -430,4 +434,3 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 ## Notes for assessor
 
-- There is some inconsistent styling throughout the buttons and on smaller devices. When I did my validations, I had to remove the "a" element from inside the "button" element. I've tried my best to style them properly but at the time of writing this, I'm running out of time and the deadline is fast approaching.
