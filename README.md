@@ -8,9 +8,11 @@ You can find the link to the deployed site here, [TeeTime](https://teetime0000-4
 
 This is the 4th project for the diploma in Full Stack Software Development with Code Institute. TeeTime is a blog where users can interact with eachother, compare favourite golf courses and chat about all things golf. The website will offer users the ability to create, edit delete posts. They will also be able to comment on eachother posts. Think of it as Instagram or Facebook but for golfers. This is a full stack website which incorporates the Django framework. One my main goals is to get people into the game of golf so once users have engaged with content on the site.
 
-# User Experience (UX)
 
-## Project Goals
+# User Experience (UX)
+
+
+## Project Goals
 
 - Potentially get people into the game of golf. 
 
@@ -28,7 +30,8 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 - Create an easy to navigate, user friendly site. 
 
-## Target Audience
+
+## Target Audience
 
 - People who might be looking to take the game of golf up. 
 
@@ -38,7 +41,8 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 # Agile Methodology
 
-## Epics
+
+## Epics
 
 - Fully functioning site.
 
@@ -74,11 +78,13 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 
 10. Background story of creator. 
 
-## Kanban Board
+
+## Kanban Board
 
 - I mapped my User Stories onto my Kanban Board on GitHub. I found it very useful for project management and it was easy to identify which features were in the backlog, which features were in progress and which features were ready. My Kanban Board is public and can be viewed in the repository on GitHub but I will attach a screenshot here. 
 
 ![Kanban Board](static/images/kanbanboard.png)
+
 
 ## MoSCoW Prioritization
 
@@ -97,13 +103,16 @@ This is the 4th project for the diploma in Full Stack Software Development with 
 - I found that it was an efficient of managing my time and putting my time into the most important part of my project while implementing the most important features first
 and working my way down the priority list. 
 
+
 # Features
 
-## Landing Page
+
+## Landing Page
 
 - The TeeTime landing page is simple and easy to navigate. The buttons are big and bright and describe the function of each clearly. The user will have the ability to register an account, sign in with their details, submit one of their favourite golf courses and even share a blog post (note: the user must be signed in to share a post). 
 
 ![Landing Page](static/images/landingpage.png)
+
 
 ## Navbar and Navbar links
 
@@ -111,19 +120,22 @@ and working my way down the priority list.
 
 ![NavBar](static/images/navbar.png)
 
-## Login Status
+
+## Login Status
 
 - This very simple feature reflects the users login status to them. It's just so the user knows that they're logged in. The user will know they're logged in when it says **Logout** at the bottom of the navbar. 
 
 ![Login Status](static/images/loginstatus.png)
 
-## Create, Read, Update, Delete (CRUD) Functionality
+
+## Create, Read, Update, Delete (CRUD) Functionality
 
 - This was one of the most important parts of the project but also one of the toughest to get right. I found myself really struggling to get the buttons and features working for this but was without a doubt super rewarding to see it all wired up. If the user clickc **Golf News** or **Click here to share a blog post and view other posts!** they will be allowed to Create a blog post. Then the user can Read the blog post by clicking **View posts here!**, where they will be presented with 3 buttons which control what the user can do with the posts. **Edit post!** controls the Update part of CRUD functionality while **Delete post!** allows the user to delete a blog post. 
 
 ![CRUD Example](static/images/crudexample.png)
 
-## Register / Sign In / Sign Out
+
+## Register / Sign In / Sign Out
 
 - This is the part of the application where the user can register or log into the site. The user will **NOT** be allowed to create and share posts unless they're logged in. The user picks a username, a password and then confirms the password by typing it again. (Note: you might be wondering why you see "Email (optional):" and this is because I changed the account authentication method in settings.py throughout the project and hid the input for email. However, at the time of writing this README, I didn't figure out how to hide the heading for this input, I just figured it was easier to pick a username instead of an email and username). There will be instructions in this form for deciding on a strong password. Just above the sign up form you will see a turquoise box which will enable the user to **sign in** should they already have an acccount. 
 
@@ -137,7 +149,8 @@ and working my way down the priority list.
 
 ![SignOut Screen](static/images/signoutscreen.png)
 
-## Feedback messages to user upon user actions (i.e deleting a post)
+
+## Feedback messages to user upon user actions (i.e deleting a post)
 
 - I have implemented feedback messages to the user when they perform certain actions. This reminds me the user of an action they have performed. **See below:**
 
@@ -153,15 +166,18 @@ and working my way down the priority list.
 
 ![Signed Out](static/images/signedout.png)
 
+
 ## Back to top button
 
 - I used some basic JavaScript to create a back to top button which users can click to easily navigate back to the top of the webpage.
 
 ![Back to top](static/images/backtotop.png)
 
+
 # Design
 
- ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
+
+ ### As with my previous projects I went with a very simple design for this project, **the main design features are detailed below:**
 
 - I used a pretty simple [web gradient](https://webgradients.com/) as a background image.
 
@@ -170,6 +186,7 @@ and working my way down the priority list.
 - I gave all divs a consistent border and border styles aswell as some box-shadow. 
 
 - All buttons are underline upon hovering on them. This is so users know that they're hovering over a button. 
+
 
 ## Technologies Used
 
@@ -199,7 +216,8 @@ and working my way down the priority list.
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
-## Typography
+
+## Typography
 
 - The project portrays the "Oswald" font. I like the simplicity of this one but it also gives the site a more personalised feel. I wanted this to be applied to all so used the "*" selector. You can find this between lines 3-5 in "static/css/style.css". **See steps below to import a font of your choice:**
 
@@ -215,7 +233,8 @@ and working my way down the priority list.
 
 6. Embed this code in the head of your HTML file. 
 
-## Color Palette
+
+## Color Palette
 
 The main colors I went with for this project are as follows:
 
@@ -241,25 +260,35 @@ The main colors I went with for this project are as follows:
 
 11. purple (hover pseudo class)
 
-## Wireframes (include different screen sizes)
+
+## Wireframes (include different screen sizes)
 
 - Wireframes are basic skeleton guides that show the potential layout of a site and its content. I used Balsamiq to create my wireframes. **See below for some examples:**
 
-## Post Feed Wireframe
+
+## Post Feed Wireframe
+
 
 ![Article Feed](static/images/articlefeedwireframe.png)
 
-## Landing Page Wireframe
+
+## Landing Page Wireframe
+
 
 ![Landing Page](static/images/landingpagewireframe.png)
 
+
 ## Signup Form Wireframe
+
 
 ![Signup Form](static/images/signupformwireframe.png)
 
-## iPad Landing Page Wireframe
+
+## iPad Landing Page Wireframe
+
 
 ![iPad Landing Page](static/images/ipadlandingpagewireframe.png)
+
 
 ## iPhone Landing Page Wireframe
 
@@ -267,15 +296,16 @@ The main colors I went with for this project are as follows:
 
 # Testing
 
-## User Story Testing
+## User Story Testing
 
-### User Story 1 - Create a convenient, easy-to-navigate interface
+### User Story 1 - Create a convenient, easy-to-navigate interface
 - Description: Create an application is intuitive and user friendly.
     - Steps:
         1. Navigate the site freely, all buttons and links are displayed clearly.
         2. Hover pseudo classes are applied for accessibility.
 
-### User Story 2 - Create, Edit and Delete Functions
+
+### User Story 2 - Create, Edit and Delete Functions
 - Description: Give the user the ability Create, Edit and Delete items.
     - Steps:
         1. Log in or register if you haven't already registered.
@@ -284,7 +314,8 @@ The main colors I went with for this project are as follows:
         4. The user will see 3 options, "Delete Post!", "View Post!" and "Edit Post!".
     - Expected Results: The user can Create, Edit and Delete items which was essential functionality for this project. 
 
-### User Story 3 - View the dates a blog post was created
+
+### User Story 3 - View the dates a blog post was created
 - Description: Show the date a post was created on TeeTime. 
     - Steps:
         1. Create a post.
@@ -292,7 +323,8 @@ The main colors I went with for this project are as follows:
         3. View the date a post was created. 
     - Expected Results: The user can see the date a post was created. 
 
-### User Story 4 - Different golf courses
+
+### User Story 4 - Different golf courses
 - Description: Create a feature where the users could see list of golf courses submitted to allow comparisons. 
     - Steps:
         1. Click "Golf Courses" in the navbar. 
@@ -301,7 +333,8 @@ The main colors I went with for this project are as follows:
         4. The user will have the option to delete a course also.
     - Expected Results: View list of submitted golf courses. 
 
-### User Story 5 - Commenting other peoples posts (Future feature)
+
+### User Story 5 - Commenting other peoples posts (Future feature)
 - Description: The ability to comment on other users posts. 
     - Steps:
         1. Click "Golf News" or log in and create a post.
@@ -309,13 +342,15 @@ The main colors I went with for this project are as follows:
         3. You will see an option to add a comment.  
     - Expected Results: Users can comment on eachothers posts, the comment will show the date of creation and the user who created it. 
 
-### User Story 6 - Signing up for golf newsletter (Will not be implemented at this time)
+### User Story 6 - Signing up for golf newsletter (Will not be implemented at this time)
     - Description: Sign up for a golf newsletter with the latest news from the golf world.  
+
 
 ### User Story 7 - Course ratings (Will not be implemented at this time)
     - Description: Add the ability to rate courses which were submitted by users. 
 
-### User Story 8 - Defensive programming
+
+### User Story 8 - Defensive programming
 - Description: When signing out, the user is asked "Are you sure you want to sign out?" 
     - Steps:
         1. Login or Register using the links provided. 
@@ -323,17 +358,19 @@ The main colors I went with for this project are as follows:
         3. You will see the message "Are you sure you want to sign out?"
     - Expected Results: The user can click "sign out" if they wish. But, this feature is implemented so if they hit "Logout" by accident, they are reminded that they have done so. 
 
-### User Story 9 - Search functions (Will not be implemented at this stage)
+
+### User Story 9 - Search functions (Will not be implemented at this stage)
     - Description: The ability to search posts created. 
+
 
 ### User Story 10 - Background story of creator (Will not be implemented at this time)
     - Description: Page showcasing the idea behind TeeTime and the background of the creator. 
 
-## Browser Compatibility
+
+## Browser Compatibility
 
 - The site works as intended on Google Chrome and Safari. No issuses were reported. 
 
-## Validations
 
 ## Validations
 
@@ -401,7 +438,8 @@ Directory	File	Result
 | tee_time 	| urls.py     	| PASS  	|
 | tee_time 	| wsgi.py     	| PASS  	|
 
-## Lighthouse Testing (Desktop and Mobile)
+
+## Lighthouse Testing (Desktop and Mobile)
 
 Lighthouse testing is used to analyse a number of different things about a webpage. These can include performance, accessibility, best practices, SEO and Progressive Web App (PWA).
 
@@ -446,7 +484,7 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 # Deployment
 
-### The deployment process is done on a platform called Heroku. The deployment process is lengthy but is as follows:
+### The deployment process is done on a platform called Heroku. The deployment process is lengthy but is as follows:
 
 - Create a Heroku account if you haven't done so already. If you're a Code Institute student then you most likely already have one. 
 
@@ -497,7 +535,3 @@ To perform a Lighthouse audit, **please follow these steps:**
 - Tomas, for his patience and advice for this project. 
 
 - The Slack community. 
-
-## Notes for assessor
-
-- 
