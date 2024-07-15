@@ -276,19 +276,19 @@ The main colors I went with for this project are as follows:
 ## Validations
 
 - HTML Validations
-| Directory | File                     | Result |
-| --------- | ------------------------ | ------ |
-| blog      | create_post.html         | PASS   |
-| blog      | edit_post.html           | PASS   |
-| blog      | post_detail.html         | PASS   |
-| blog      | post_list.html           | PASS   |
-| home      | golf_course_display.html | PASS   |
-| home      | golfcourse_detail.html   | PASS   |
-| home      | golfcourse_form.html     | PASS   |
-| home      | golfcourse_list.html     | PASS   |
-| signup    | login.html               | PASS   |
-| signup    | logout.html              | PASS   |
-| signup    | signup.html              | FAIL   |
+| Directory  | File                    | Result |
+|------------|-------------------------|--------|
+| blog       | create_post.html        | PASS   |
+| blog       | edit_post.html          | PASS   |
+| blog       | post_detail.html        | PASS   |
+| blog       | post_list.html          | PASS   |
+| home       | golfcourse_display.html | PASS   |
+| home       | golfcourse_detail.html  | PASS   |
+| home       | golfcourse_form.html    | PASS   |
+| home       | golfcourse_list.html    | PASS   |
+| signup     | login.html              | PASS   |
+| signup     | logout.html             | PASS   |
+| signup     | signup.html             | PASS   |
 
 **NOTE for assessor: The signup.html validation returned errors in the generated code by Django, I have no control over this therefore could not resolve it, I hope this is ok.**
 
