@@ -496,7 +496,8 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 - Deploy the project. (Enable automatic deploys if you wish for your project to deploy whenever you make a commit).
 
-# Forking
+
+# Forking
 
 - Forking a repository on GitHub essentially means creating a copy of someone else's project repository. One benefit of this would be that you can make changes to the project without affecting the original repo. To fork a repo, **please follow the below steps:**
 
