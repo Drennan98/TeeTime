@@ -107,6 +107,9 @@ and working my way down the priority list.
 # Features
 
 
+### All "Must Have" features were implemented. 
+
+
 ## Landing Page
 
 - The TeeTime landing page is simple and easy to navigate. The buttons are big and bright and describe the function of each clearly. The user will have the ability to register an account, sign in with their details, submit one of their favourite golf courses and even share a blog post (note: the user must be signed in to share a post). 
