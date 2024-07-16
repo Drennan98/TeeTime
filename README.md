@@ -536,3 +536,14 @@ To perform a Lighthouse audit, **please follow these steps:**
 - Tomas, for his patience and advice for this project. 
 
 - The Slack community. 
+
+
+# Future features 
+
+- Course ratings.
+
+- Search functions.
+
+- Background story of creator.
+
+- Signing up for golf newsletter.
