@@ -212,6 +212,8 @@ and working my way down the priority list.
 
 - [Coolors](https://coolors.co/).
 
+- [Cloudinary](https://cloudinary.com/).
+
 - [Table to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/).
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
