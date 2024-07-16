@@ -55,6 +55,7 @@ def create_post(request):
 
 
 def post_detail(request, pk):
+    """Post detail function"""
     post = get_object_or_404(Post, pk=pk)
     comments = post.comments.all()
 
@@ -78,6 +79,7 @@ def post_detail(request, pk):
 
 @login_required
 def delete_comment(request, post_id, comment_id):
+    """Delete comment function"""
     comment = get_object_or_404(Comment, pk=comment_id)
     if comment.author == request.user.username:
         comment.delete()
@@ -89,6 +91,7 @@ def delete_comment(request, post_id, comment_id):
 
 
 def delete_post(request, pk):
+    """Delete post function"""
     post = get_object_or_404(Post, pk=pk)
     if request.user != post.author and not request.user.is_superuser:
         messages.error(request, 'You are not allowed delete this post.')
@@ -102,6 +105,7 @@ def delete_post(request, pk):
 
 
 def edit_post(request, pk):
+    """Edit post function"""
     post = get_object_or_404(Post, pk=pk)
 
     if request.user != post.author and not request.user.is_superuser:

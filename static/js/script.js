@@ -1,3 +1,7 @@
+/**
+ * This is my back to top button which makes it easy for users to go back to top of the page. 
+ */
+
 const scrollTopButton = document.getElementById('scrollTopButton');
 
 window.addEventListener('scroll', function() {
