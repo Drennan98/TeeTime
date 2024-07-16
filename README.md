@@ -542,6 +542,8 @@ To perform a Lighthouse audit, **please follow these steps:**
 
 - The Slack community. 
 
+- Code Institute Walkthrough Projects.
+
 
 # Future features 
 
