@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'whitenoise',
+    'cloudinary',
     'blog',
     'home',
     'signup',
